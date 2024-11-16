@@ -96,4 +96,61 @@ export const featuresTranslations = {
     },
 };
 
+// translations/faq.ts
+export const faqTranslations = {
+    en: {
+        title: "Questions & Answers",
+        faqs: [
+            {
+                question: "How can I contact customer support?",
+                answer:
+                    "To contact customer support, look for a 'Contact us' or 'Help' button or link on the website or platform. You may be able to email, call, or chat with customer support for assistance.",
+            },
+            {
+                question: "How do I find my purchase history?",
+                answer:
+                    "To find your purchase history, log in and go to the account or purchase history page. Look for a list of your past purchases or orders, and click on any item to see more details.",
+            },
+            {
+                question: "How do I update my billing information?",
+                answer:
+                    "To update your billing information, log in and go to the billing or payment page. Look for an option to 'Update payment method' or 'Edit billing information' and follow the prompts. Be sure to save your changes before exiting.",
+            },
+            {
+                question: "How do I upload a file or document?",
+                answer:
+                    "To upload a file or document, look for a button or link that says 'Upload' or 'Add file.' Click on the button or link and follow the prompts to select the file from your computer or device. Be sure to check the file size and format requirements before uploading.",
+            },
+        ],
+        contactPrompt: "Didn’t find the answer you were looking for?",
+        contactLink: "Contact Support",
+    },
+    id: {
+        title: "Pertanyaan & Jawaban",
+        faqs: [
+            {
+                question: "Bagaimana saya bisa menghubungi layanan pelanggan?",
+                answer:
+                    "Untuk menghubungi layanan pelanggan, cari tombol atau tautan 'Hubungi kami' atau 'Bantuan' di situs web atau platform. Anda dapat menghubungi melalui email, telepon, atau obrolan.",
+            },
+            {
+                question: "Bagaimana saya menemukan riwayat pembelian saya?",
+                answer:
+                    "Untuk menemukan riwayat pembelian Anda, masuk dan buka halaman akun atau riwayat pembelian. Cari daftar pembelian atau pesanan Anda sebelumnya, lalu klik item apa pun untuk melihat detailnya.",
+            },
+            {
+                question: "Bagaimana cara memperbarui informasi tagihan saya?",
+                answer:
+                    "Untuk memperbarui informasi tagihan Anda, masuk dan buka halaman pembayaran atau tagihan. Cari opsi 'Perbarui metode pembayaran' atau 'Edit informasi tagihan' dan ikuti petunjuknya. Jangan lupa untuk menyimpan perubahan Anda sebelum keluar.",
+            },
+            {
+                question: "Bagaimana cara mengunggah file atau dokumen?",
+                answer:
+                    "Untuk mengunggah file atau dokumen, cari tombol atau tautan yang bertuliskan 'Unggah' atau 'Tambahkan file'. Klik tombol atau tautan tersebut dan ikuti petunjuknya untuk memilih file dari komputer atau perangkat Anda. Pastikan ukuran dan format file sesuai dengan persyaratan.",
+            },
+        ],
+        contactPrompt: "Tidak menemukan jawaban yang Anda cari?",
+        contactLink: "Hubungi Dukungan",
+    },
+};
 

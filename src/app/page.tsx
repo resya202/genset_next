@@ -3,10 +3,11 @@ import Navbar from "./components/navbar";
 import Hero from "./components/hero";
 import Features from "./components/features";
 import LenisProvider from "./provider/lenisProvider";
+import FAQ from "./components/FAQ";
 
 export default function Home() {
   return (
-    <div className="font-sans antialiased">
+    <div className="font-sans antialiased pb-20">
       <LenisProvider
         opts={{
           duration: 1.2,
@@ -16,6 +17,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Features />
+      <FAQ />
     </div>
   );
 }

@@ -86,26 +86,26 @@ export default function Hero() {
         </h1>
         <p className="mt-4 text-gray-600">{t.description}</p>
         <div className="mt-6 flex justify-center lg:justify-start gap-4">
-          <button className="px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700">
+          <button className="px-6 py-3 bg-tealGreen text-white rounded-lg hover:bg-green-700">
             {t.bookingButton}
           </button>
-          <button className="px-6 py-3 bg-gray-100 text-green-600 border border-green-600 rounded-lg hover:bg-gray-200">
+          <button className="px-6 py-3 bg-gray-100 text-tealGreen border border-tealgrebg-tealGreen rounded-lg hover:bg-gray-200">
             {t.downloadButton}
           </button>
         </div>
 
         {/* Statistics Section */}
-        <section className="w-[95%] flex justify-between items-center py-4 bg-gray-100 mt-6">
+        <section className="w-[95%] flex justify-between items-center py-4 bg-gray-100 mt-6 rounded-lg">
           <div className="text-center border-r pr-2 w-1/3">
-            <h3 className="text-3xl font-bold text-green-600">5+ Years</h3>
+            <h3 className="text-3xl font-bold text-tealGreen">5+ Years</h3>
             <p className="text-gray-600">{t.statistics.yearsOperated}</p>
           </div>
           <div className="text-center border-r pr-2 w-1/3">
-            <h3 className="text-3xl font-bold text-green-600">1000+</h3>
+            <h3 className="text-3xl font-bold text-tealGreen">1000+</h3>
             <p className="text-gray-600">{t.statistics.satisfiedBuyers}</p>
           </div>
           <div className="text-center pr-2 w-1/3">
-            <h3 className="text-3xl font-bold text-green-600">90%</h3>
+            <h3 className="text-3xl font-bold text-tealGreen">90%</h3>
             <p className="text-gray-600">{t.statistics.satisfiedRate}</p>
           </div>
         </section>
