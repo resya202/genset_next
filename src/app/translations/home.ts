@@ -154,3 +154,29 @@ export const faqTranslations = {
     },
 };
 
+export const productTranslations = {
+    en: {
+        generatorHeading: "Find and order the best generator for your needs",
+        catalogButton: "Product Catalog",
+        orderButton: "Order Now",
+        startFrom: "Start from",
+        joinHeading:
+            "Talk to our sales team for accurate information or send your request via email.",
+        emailPrompt: "Send an email now",
+        emailPlaceholder: "Enter your email",
+        submitButton: "Submit",
+    },
+    id: {
+        generatorHeading:
+            "Cari dan pesan mesin generator yang paling cocok untuk kebutuhanmu",
+        catalogButton: "Katalog Produk",
+        orderButton: "Pesan Sekarang",
+        startFrom: "Mulai dari",
+        joinHeading:
+            "Berbicara dengan sales kami untuk mendapatkan info paling akurat, atau bisa kirimkan permintaanmu melalui email.",
+        emailPrompt: "Kirimkan email sekarang",
+        emailPlaceholder: "Masukan Email",
+        submitButton: "Kirim",
+    },
+};
+

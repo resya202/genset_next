@@ -4,6 +4,7 @@ import Hero from "./components/hero";
 import Features from "./components/features";
 import LenisProvider from "./provider/lenisProvider";
 import FAQ from "./components/FAQ";
+import ProductList from "./components/productList";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Hero />
       <Features />
       <FAQ />
+      <ProductList />
     </div>
   );
 }
