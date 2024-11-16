@@ -11,6 +11,9 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        tealGreen: "#018E75",
+        dimGray: "#575D5B",
+        tanOrange: "#CF9667"
       },
     },
   },
