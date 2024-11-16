@@ -9,7 +9,7 @@ export default function Header() {
   const t = headerTranslations[language];
 
   return (
-    <header className="flex justify-between items-center px-6 py-4 shadow-sm">
+    <header className="flex justify-between items-center px-6 py-4 shadow-sm sticky top-0 bg-white z-50">
       {/* Logo */}
       <Image
         src="/dummyLogo.webp"
