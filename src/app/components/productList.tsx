@@ -49,20 +49,20 @@ export default function ProductList() {
     <section className="mt-20 px-4 md:px-8">
       <div>
         {/* Generator */}
-        <div className="w-full p-6 md:p-7 bg-tealGreen rounded-2xl flex flex-col">
+        <div className="w-full p-6 md:p-7 bg-primaryDarkBlue rounded-2xl flex flex-col">
           <div className="w-full flex flex-col gap-6 md:flex-row md:items-center justify-between">
             <h1 className="font-medium text-white text-2xl md:text-[40px] md:leading-snug max-w-lg">
               {t.generatorHeading}
             </h1>
 
-            <div className="flex flex-col md:flex-row items-center gap-2 md:gap-4 font-semibold w-full md:w-auto">
+            <div className="flex flex-col md:flex-row items-center gap-2 md:gap-4 font-semibold w-full md:w-auto text-black">
               <button className={"w-full md:w-auto"}>
-                <div className="px-4 py-3 md:px-8 border rounded-lg border-white text-white text-sm md:text-base transition-colors hover:bg-white hover:text-black whitespace-nowrap">
+                <div className="px-4 py-3 md:px-8  rounded-lg bg-primaryOrange text-sm md:text-base transition-colors hover:bg-white hover:text-primaryBlack  whitespace-nowrap">
                   {t.catalogButton}
                 </div>
               </button>
               <button className={"w-full md:w-auto"}>
-                <div className="px-4 py-3 md:px-8 rounded-lg bg-lemongrass text-white border border-white text-sm md:text-base transition-colors hover:bg-white hover:text-black">
+                <div className="px-4 py-3 md:px-8 rounded-lg bg-lemongrass bg-primaryOrange text-sm md:text-base transition-colors hover:bg-white hover:text-primaryBlack ">
                   {t.orderButton}
                 </div>
               </button>
@@ -75,7 +75,7 @@ export default function ProductList() {
                 <div
                   key={idx}
                   className={cnm(
-                    "w-full flex-grow flex-shrink-0 basis-1/6 rounded-2xl overflow-hidden relative bg-tealGreen flex flex-col group transition-all duration-500 ease-in-out",
+                    "w-full flex-grow flex-shrink-0 basis-1/6 rounded-2xl overflow-hidden relative bg-primaryBlack flex flex-col group transition-all duration-500 ease-in-out",
                     "hover:flex-grow-[3] hover:basis-[25%]"
                   )}
                 >
@@ -89,7 +89,7 @@ export default function ProductList() {
                     />
                   </div>
 
-                  <div className="absolute w-full h-[40%] pointer-events-none bg-gradient-to-b from-transparent to-white/15 bottom-0"></div>
+                  <div className="absolute w-full h-[40%] pointer-events-none bg-gradient-to-b from-transparent to-white/20 bottom-0"></div>
                   <div className="flex flex-col-reverse gap-4 md:gap-0 md:flex-row md:items-center justify-between w-full mt-auto p-4">
                     <div className="flex flex-col gap-1 mt-auto text-white relative items-start">
                       <p className="font-semibold text-lg">{item.generator}</p>
@@ -138,7 +138,7 @@ export default function ProductList() {
                   placeholder={t.emailPlaceholder}
                 />
                 <button>
-                  <p className="text-sm text-white md:text-base px-3 md:px-5 py-3 bg-tealGreen text-lemongrass rounded-md font-semibold tracking-wide transition-colors hover:bg-green-500">
+                  <p className="text-sm text-white md:text-base px-3 md:px-5 py-3 bg-primaryBlack text-lemongrass rounded-md font-semibold tracking-wide transition-colors hover:bg-primaryOrange">
                     {t.submitButton}
                   </p>
                 </button>

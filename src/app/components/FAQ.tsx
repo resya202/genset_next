@@ -52,7 +52,7 @@ export default function FAQ() {
   }, []);
 
   return (
-    <section className="bg-gray-50 py-12 px-6 mt-20">
+    <section className="shadow-md py-12 px-6 mt-20">
       <div className="flex flex-col lg:flex-row items-start gap-8 max-w-7xl mx-auto">
         {/* FAQ Section */}
         <div className="lg:w-2/3">
@@ -70,13 +70,10 @@ export default function FAQ() {
             {t.faqs.map((faq, index) => (
               <div
                 key={index}
-                className={`bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow`}
-                style={{
-                  transitionDelay: `${index * 0.2}s`, // Staggered animation for each FAQ
-                }}
+                className={`bg-white p-6 rounded-lg shadow-md hover:shadow-lg hover:shadow-primaryOrange transition-shadow`}
               >
                 <h3 className="text-lg font-semibold text-gray-800 flex items-center gap-2">
-                  <span className="w-8 h-8 flex items-center justify-center bg-tealGreen text-white rounded-full">
+                  <span className="w-8 h-8 flex items-center justify-center bg-primaryBlack text-white rounded-full">
                     ?
                   </span>
                   {faq.question}
@@ -95,7 +92,7 @@ export default function FAQ() {
             }`}
           >
             <p className="text-gray-600">{t.contactPrompt}</p>
-            <button className="mt-4 flex items-center justify-center gap-2 bg-tealGreen text-white text-lg font-medium px-6 py-3 rounded-full hover:bg-teal-700 transition">
+            <button className="mt-4 flex items-center justify-center gap-2 bg-primaryBlack text-white text-lg font-medium px-6 py-3 rounded-full hover:bg-primaryOrange transition">
               <BiSupport className="text-2xl" />
               {t.contactLink}
             </button>

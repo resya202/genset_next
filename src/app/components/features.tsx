@@ -44,14 +44,14 @@ export default function Features() {
   return (
     <section
       ref={componentRef}
-      className={`flex flex-col lg:flex-row items-center px-6 py-12 gap-8 bg-gray-100 rounded-lg transition-transform duration-700 ${
+      className={`flex flex-col lg:flex-row items-center px-6 py-12 gap-8 bg-primaryDarkBlue rounded-lg transition-transform duration-700 ${
         isVisible ? "translate-y-0 opacity-100" : "translate-y-20 opacity-0"
       }`}
     >
       {/* Text Section */}
       <div className="lg:w-1/2 text-center lg:text-left">
-        <h2 className="text-4xl font-bold text-gray-900">{t.heading}</h2>
-        <p className="mt-4 text-gray-600">{t.description}</p>
+        <h2 className="text-4xl font-bold text-white">{t.heading}</h2>
+        <p className="mt-4 text-white">{t.description}</p>
 
         {/* Accordion Section */}
         <div className="mt-6">
@@ -65,7 +65,7 @@ export default function Features() {
               <div className="flex justify-between items-center">
                 <h3
                   className={`text-lg font-medium ${
-                    activeIndex === index ? "text-tealGreen" : "text-gray-900"
+                    activeIndex === index ? "text-primaryOrange" : "text-white"
                   }`}
                 >
                   {item.title}
@@ -75,13 +75,13 @@ export default function Features() {
                     activeIndex === index ? "rotate-180" : "rotate-0"
                   }`}
                 >
-                  <FaArrowDown className="text-xl text-tealGreen" />
+                  <FaArrowDown className="text-xl text-primaryOrange" />
                 </span>
               </div>
 
               {/* Accordion Content */}
               {activeIndex === index && (
-                <p className="mt-4 text-gray-600">{item.content}</p>
+                <p className="mt-4 text-white">{item.content}</p>
               )}
             </div>
           ))}

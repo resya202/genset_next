@@ -9,25 +9,25 @@ export default function Header() {
   const t = headerTranslations[language];
 
   return (
-    <header className="flex justify-between items-center px-6 py-4 shadow-sm sticky top-0 bg-white z-50">
+    <header className="flex justify-between items-center px-6 py-4 shadow-sm sticky top-0 bg-primaryDarkBlue z-50 text-white">
       {/* Logo */}
       <Image
-        src="/dummyLogo.webp"
+        src="/BPN-Logo.png"
         width={60}
         height={60}
-        className="object-cover"
+        className="object-cover rounded-full"
         alt="Company Logo"
       />
 
       {/* Navigation Links */}
       <nav className="flex gap-6">
-        <a href="#home" className="text-gray-700 hover:text-green-600">
+        <a href="#home" className="hover:text-primaryOrange">
           {t.home}
         </a>
-        <a href="#about" className="text-gray-700 hover:text-green-600">
+        <a href="#about" className="hover:text-primaryOrange">
           {t.aboutUs}
         </a>
-        <a href="#products" className="text-gray-700 hover:text-green-600">
+        <a href="#products" className="hover:text-primaryOrange">
           {t.products}
         </a>
       </nav>
@@ -36,7 +36,7 @@ export default function Header() {
       <div className="flex gap-6 items-center">
         {/* English Flag */}
         <button
-          className="w-10 h-10 rounded-full overflow-hidden border border-neutral-100"
+          className="w-10 h-10 rounded-full overflow-hidden"
           onClick={() => toggleLanguage("en")}
         >
           <Image
@@ -50,7 +50,7 @@ export default function Header() {
 
         {/* Indonesian Flag */}
         <button
-          className="w-10 h-10 rounded-full overflow-hidden border border-neutral-100"
+          className="w-10 h-10 rounded-full overflow-hidden"
           onClick={() => toggleLanguage("id")}
         >
           <Image
@@ -63,7 +63,7 @@ export default function Header() {
         </button>
 
         {/* Booking Button */}
-        <button className="px-4 py-2 text-sm text-white bg-black font-bold rounded-lg hover:bg-gray-700">
+        <button className="px-4 py-2 text-sm text-black bg-primaryOrange font-bold rounded-lg hover:bg-white hover:text-black">
           {t.bookNow}
         </button>
       </div>

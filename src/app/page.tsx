@@ -32,9 +32,9 @@ export default function Home() {
           easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
         }}
       />
+      <Hero />
       <div className="max-w-[1480px] m-auto">
         {/* Lazy-loaded components */}
-        <Hero />
         <Features />
         <FAQ />
         <Testimonials />
