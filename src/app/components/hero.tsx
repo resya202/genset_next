@@ -17,7 +17,6 @@ export default function Hero() {
 
   useEffect(() => {
     if (!leftSectionRef.current || !rightSectionRef.current) {
-      // If the refs are null, return early to avoid runtime errors
       return;
     }
 

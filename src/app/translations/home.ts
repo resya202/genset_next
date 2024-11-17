@@ -269,3 +269,51 @@ export const testimonialsTranslations = {
     },
 };
 
+export const footerTranslations = {
+    en: {
+        contactTitle: "Contact",
+        contactAddress: "Puri Indah, West Jakarta, Indonesia.",
+        contactPhone: "+62 856 9955 1109",
+        contactEmail: "support@gmail.com",
+        pagedone: "Pagedone",
+        home: "Home",
+        about: "About",
+        products: "Products Catalogs",
+        proVersion: "Pro Version",
+        resources: "Resources",
+        faqs: "FAQs",
+        quickStart: "Quick Start",
+        documentation: "Documentation",
+        userGuide: "User Guide",
+        newsletterTitle: "Join Our Community for Exclusive Updates",
+        newsletterDescription:
+            "Subscribe to Our Exclusive Newsletter for the Latest Updates.",
+        placeholder: "mail@gmail.com",
+        subscribe: "Subscribe",
+        copyright: "©Company 2024, All rights reserved.",
+    },
+    id: {
+        contactTitle: "Kontak",
+        contactAddress: "Puri Indah, Jakarta Barat, Indonesia.",
+        contactPhone: "+62 856 9955 1109",
+        contactEmail: "dukungan@gmail.com",
+        pagedone: "Pagedone",
+        home: "Beranda",
+        about: "Tentang",
+        products: "Catalog Produk",
+        proVersion: "Versi Pro",
+        resources: "Sumber Daya",
+        faqs: "FAQ",
+        quickStart: "Panduan Cepat",
+        documentation: "Dokumentasi",
+        userGuide: "Panduan Pengguna",
+        newsletterTitle: "Bergabung dengan Newsletter Kami",
+        newsletterDescription:
+            "Berlangganan Newsletter Eksklusif Kami untuk Mendapatkan Pembaruan Terbaru.",
+        placeholder: "mail@gmail.com",
+        subscribe: "Langganan",
+        copyright: "©Company 2024, Semua hak dilindungi.",
+    },
+};
+
+

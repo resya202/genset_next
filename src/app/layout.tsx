@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import Script from "next/script";
 import "./globals.css";
 import { LanguageProvider } from "./context/languageContext";
+import LayoutWrapper from "./provider/layoutWrapper";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -34,9 +35,11 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white max-w-[1480px] m-auto`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white`}
       >
-        <LanguageProvider>{children}</LanguageProvider>
+        <LanguageProvider>
+          <LayoutWrapper>{children}</LayoutWrapper>
+        </LanguageProvider>
         <Script
           src="https://cdn.jsdelivr.net/npm/pagedone@1.2.2/src/js/pagedone.js"
           strategy="afterInteractive"

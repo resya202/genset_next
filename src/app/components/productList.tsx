@@ -138,7 +138,7 @@ export default function ProductList() {
                   placeholder={t.emailPlaceholder}
                 />
                 <button>
-                  <p className="text-sm text-white md:text-base px-3 md:px-5 py-3 bg-tealGreen text-lemongrass rounded-md font-semibold tracking-wide transition-colors hover:bg-tealGreen/90">
+                  <p className="text-sm text-white md:text-base px-3 md:px-5 py-3 bg-tealGreen text-lemongrass rounded-md font-semibold tracking-wide transition-colors hover:bg-green-500">
                     {t.submitButton}
                   </p>
                 </button>
