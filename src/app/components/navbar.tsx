@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { useLanguage } from "../context/languageContext";
 import { headerTranslations } from "../translations/home";
+import Link from "next/link";
 
 export default function Header() {
   const { language, toggleLanguage } = useLanguage();
@@ -21,15 +22,15 @@ export default function Header() {
 
       {/* Navigation Links */}
       <nav className="flex gap-6">
-        <a href="#home" className="hover:text-primaryOrange">
+        <Link href="/" className="hover:text-primaryOrange">
           {t.home}
-        </a>
-        <a href="#about" className="hover:text-primaryOrange">
+        </Link>
+        <Link href="about" className="hover:text-primaryOrange">
           {t.aboutUs}
-        </a>
-        <a href="#products" className="hover:text-primaryOrange">
+        </Link>
+        <Link href="products" className="hover:text-primaryOrange">
           {t.products}
-        </a>
+        </Link>
       </nav>
 
       {/* Language Selector and Booking Button */}

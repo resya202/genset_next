@@ -11,68 +11,44 @@ export default function Hero() {
   // Get the correct translations based on the selected language
   const t = heroTranslations[language];
 
-  // Refs for animations
-  const leftSectionRef = useRef<HTMLDivElement>(null);
-  const rightSectionRef = useRef<HTMLDivElement>(null);
+  const componentRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (!leftSectionRef.current || !rightSectionRef.current) {
-      return;
-    }
+    const ctx = gsap.context(() => {
+      const timeline = gsap.timeline({
+        defaults: { ease: "power1.out", duration: 0.8 },
+      });
 
-    // GSAP Timeline for left section
-    const tl = gsap.timeline({
-      defaults: { ease: "power1.out", duration: 0.8 },
-    });
+      // Animate left section elements
+      timeline
+        .from(".left-section h1", { x: -50, opacity: 0 })
+        .from(".left-section p", { x: -50, opacity: 0 }, "-=0.4")
+        .from(
+          ".left-section button",
+          { x: -50, opacity: 0, stagger: 0.2 },
+          "-=0.4"
+        )
+        .from(".left-section section", { x: -50, opacity: 0 }, "-=0.4");
 
-    // Animate the left section
-    tl.from(leftSectionRef.current.querySelector("h1"), {
-      x: -50,
-      opacity: 0,
-    })
-      .from(
-        leftSectionRef.current.querySelector("p"),
-        {
-          x: -50,
-          opacity: 0,
-        },
-        "-=0.4"
-      )
-      .from(
-        leftSectionRef.current.querySelectorAll(
-          "button"
-        ) as NodeListOf<Element>, // Explicit type casting for NodeList
-        {
-          x: -50,
-          opacity: 0,
-          stagger: 0.2,
-        },
-        "-=0.4"
-      )
-      .from(
-        leftSectionRef.current.querySelector("section"),
-        {
-          x: -50,
-          opacity: 0,
-        },
-        "-=0.4"
-      );
+      // Animate right section after left section finishes
+      gsap.from(".right-section", {
+        x: 50,
+        opacity: 0,
+        duration: 1,
+        delay: timeline.duration(),
+        ease: "power1.out",
+      });
+    }, componentRef);
 
-    // Animate the right section after the left section finishes
-    gsap.from(rightSectionRef.current, {
-      x: 50,
-      opacity: 0,
-      duration: 1,
-      delay: tl.duration(), // Wait until the left section animation completes
-      ease: "power1.out",
-    });
+    // Cleanup to avoid memory leaks
+    return () => ctx.revert();
   }, []);
 
   return (
-    <section>
+    <section ref={componentRef}>
       <div className="flex flex-col lg:flex-row items-center px-6 py-12 shadow-md my-20 rounded-lg max-w-[1480px] mx-auto">
         {/* Left Section */}
-        <div ref={leftSectionRef} className="lg:w-1/2 text-center lg:text-left">
+        <div className="left-section lg:w-1/2 text-center lg:text-left">
           <h1 className="text-4xl font-bold text-gray-900">
             {t.heading.split(" ").map((word, i) =>
               word === "journey" || word === "perjalanan" ? (
@@ -114,21 +90,18 @@ export default function Hero() {
         </div>
 
         {/* Right Section */}
-        <div
-          ref={rightSectionRef}
-          className="lg:w-1/2 mt-8 lg:mt-0 relative flex justify-center items-center"
-        >
+        <div className="right-section lg:w-1/2 mt-8 lg:mt-0 relative flex justify-center items-center">
           <div className="relative w-full h-[400px] lg:h-[500px] rounded-lg overflow-hidden shadow-md">
             <Image
               src="/genset/IMG_7822.webp"
               alt={language === "en" ? "Plane" : "Pesawat"}
-              layout="fill"
-              objectFit="cover"
-              className="rounded-tl-lg rounded-tr-lg rounded-bl-lg"
+              fill
+              sizes="(min-width: 768px) 900px, 500px"
+              className="object-cover rounded-lg"
             />
           </div>
 
-          <div className="absolute w-[24rem] h-[15rem] bottom-[0px] left-[0px] bg-white flex items-end justify-start rounded-tr-lg rounded-bl-lg rounded-br-lg">
+          <div className="absolute w-[24rem] h-[15rem] bottom-0 left-0 bg-white flex items-end justify-start rounded-tr-lg rounded-bl-lg rounded-br-lg">
             <div className="w-[95%] h-[93%] rounded-lg overflow-hidden shadow-lg">
               <Image
                 src="/genset/IMG_7776.webp"
