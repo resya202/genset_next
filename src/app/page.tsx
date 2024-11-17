@@ -5,6 +5,7 @@ import Features from "./components/features";
 import LenisProvider from "./provider/lenisProvider";
 import FAQ from "./components/FAQ";
 import ProductList from "./components/productList";
+import Testimonials from "./components/testimonials";
 
 export default function Home() {
   return (
@@ -19,6 +20,8 @@ export default function Home() {
       <Hero />
       <Features />
       <FAQ />
+
+      <Testimonials />
       <ProductList />
     </div>
   );

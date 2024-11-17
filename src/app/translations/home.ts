@@ -180,3 +180,92 @@ export const productTranslations = {
     },
 };
 
+export const testimonialsTranslations = {
+    en: {
+        title: "Clients' Feedback on Our Work",
+        subtitle:
+            "Explore the experiences of our clients with our work, showing our dedication to delivering exceptional results.",
+        reviews: [
+            {
+                id: 1,
+                src: "/features/IMG_7124.webp",
+                name: "Christopher Adams",
+                from: "New York, USA",
+                companyName: "Project Manager at Company A",
+                testimonial:
+                    "They consistently deliver exceptional quality services right on schedule, ensuring our projects proceed smoothly and efficiently.",
+            },
+            {
+                id: 2,
+                src: "/FAQ/IMG_7299.webp",
+                name: "Sophia Martinez",
+                from: "London, UK",
+                companyName: "CTO at Company B",
+                testimonial:
+                    "Their commitment to timeliness and excellence sets them apart in our industry, making them our trusted partner.",
+            },
+            {
+                id: 3,
+                src: "/features/IMG_7124.webp",
+                name: "James Williams",
+                from: "Sydney, Australia",
+                companyName: "CEO at Company C",
+                testimonial:
+                    "The team’s expertise and dedication are unmatched. They helped us achieve our project goals seamlessly.",
+            },
+            {
+                id: 4,
+                src: "/features/IMG_7124.webp",
+                name: "Olivia Brown",
+                from: "Toronto, Canada",
+                companyName: "Operations Manager at Company D",
+                testimonial:
+                    "I highly recommend their services for their outstanding support and innovation. They truly understand our needs.",
+            },
+        ],
+    },
+    id: {
+        title: "Ulasan Klien Tentang Pekerjaan Kami",
+        subtitle:
+            "Jelajahi pengalaman klien kami dengan pekerjaan kami, menunjukkan dedikasi kami untuk memberikan hasil yang luar biasa.",
+        reviews: [
+            {
+                id: 1,
+                src: "/features/IMG_7124.webp",
+                name: "Christopher Adams",
+                from: "New York, AS",
+                companyName: "Manajer Proyek di Perusahaan A",
+                testimonial:
+                    "Mereka selalu memberikan layanan berkualitas luar biasa tepat waktu, memastikan proyek kami berjalan lancar dan efisien.",
+            },
+            {
+                id: 2,
+                src: "/FAQ/IMG_7299.webp",
+                name: "Sophia Martinez",
+                from: "London, Inggris",
+                companyName: "CTO di Perusahaan B",
+                testimonial:
+                    "Komitmen mereka terhadap ketepatan waktu dan keunggulan menjadikan mereka mitra terpercaya di industri kami.",
+            },
+            {
+                id: 3,
+                src: "/features/IMG_7124.webp",
+                name: "James Williams",
+                from: "Sydney, Australia",
+                companyName: "CEO di Perusahaan C",
+                testimonial:
+                    "Keahlian dan dedikasi tim mereka sangat luar biasa. Mereka membantu kami mencapai tujuan proyek kami dengan mulus.",
+            },
+            {
+                id: 4,
+                src: "/features/IMG_7124.webp",
+                name: "Olivia Brown",
+                from: "Toronto, Kanada",
+                companyName: "Manajer Operasional di Perusahaan D",
+                testimonial:
+                    "Saya sangat merekomendasikan layanan mereka untuk dukungan dan inovasi yang luar biasa. Mereka benar-benar memahami kebutuhan kami.",
+            },
+        ],
+    },
+};
+
