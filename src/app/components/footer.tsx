@@ -16,7 +16,7 @@ export default function Footer() {
 
   return (
     <footer className="bg-gray-100 border-t border-gray-200 px-8 py-6 mt-20 rounded-tr-lg rounded-tl-lg">
-      <div className="container mx-auto flex text-black">
+      <div className=" px-6 mx-auto flex text-black">
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 w-2/3">
           <div>
             <h4 className="text-lg font-bold mb-4">{t.contactTitle}</h4>
@@ -42,7 +42,7 @@ export default function Footer() {
             <h4 className="text-lg font-bold mb-4">{t.pagedone}</h4>
             <ul className="space-y-2">
               <li>
-                <Link href="/home">
+                <Link href="/">
                   <p className="text-gray-600 hover:text-tealGreen">{t.home}</p>
                 </Link>
               </li>

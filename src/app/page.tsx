@@ -1,12 +1,27 @@
 "use client";
-import Navbar from "./components/navbar";
-import Hero from "./components/hero";
-import Features from "./components/features";
+
 import LenisProvider from "./provider/lenisProvider";
-import FAQ from "./components/FAQ";
-import ProductList from "./components/productList";
-import Testimonials from "./components/testimonials";
-import Footer from "./components/footer";
+import dynamic from "next/dynamic";
+
+const Hero = dynamic(() => import("./components/hero"), {
+  loading: () => <div>Loading Hero...</div>,
+});
+
+const Features = dynamic(() => import("./components/features"), {
+  loading: () => <div>Loading Features...</div>,
+});
+
+const FAQ = dynamic(() => import("./components/FAQ"), {
+  loading: () => <div>Loading FAQ...</div>,
+});
+
+const Testimonials = dynamic(() => import("./components/testimonials"), {
+  loading: () => <div>Loading Testimonials...</div>,
+});
+
+const ProductList = dynamic(() => import("./components/productList"), {
+  loading: () => <div>Loading Product List...</div>,
+});
 
 export default function Home() {
   return (
@@ -17,11 +32,11 @@ export default function Home() {
           easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
         }}
       />
-      <div className=" max-w-[1480px] m-auto">
+      <div className="max-w-[1480px] m-auto">
+        {/* Lazy-loaded components */}
         <Hero />
         <Features />
         <FAQ />
-
         <Testimonials />
         <ProductList />
       </div>
