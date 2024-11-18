@@ -4,8 +4,8 @@ import React from "react";
 import { fawdeTableData } from "@/app/data/tableData";
 const FawdeTable = () => {
   return (
-    <div className="p-4 max-w-[1480px] mx-auto text-black">
-      <h1 className="text-2xl font-bold mb-4">FAWDE Table</h1>
+    <div className="p-4 text-black">
+      <h1 className="text-2xl font-bold mb-4">FAWDE Products</h1>
       <table className="table-auto w-full border-collapse border border-gray-300">
         <thead>
           <tr>

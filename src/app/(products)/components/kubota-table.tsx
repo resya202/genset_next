@@ -4,8 +4,8 @@ import { kubotaTableData } from "@/app/data/tableData";
 import React from "react";
 const KubotaTable = () => {
   return (
-    <div className="p-4 max-w-[1480px] mx-auto text-black">
-      <h1 className="text-2xl font-bold mb-4">KUBOTA Table</h1>
+    <div className="p-4 text-black">
+      <h1 className="text-2xl font-bold mb-4">KUBOTA Products</h1>
       <table className="table-auto w-full border-collapse border border-gray-300">
         <thead>
           <tr>
