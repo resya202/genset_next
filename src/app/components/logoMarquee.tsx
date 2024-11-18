@@ -63,7 +63,7 @@ const LogoMarquee = () => {
   );
 
   return (
-    <div className="overflow-hidden bg-white py-10 rounded-lg">
+    <div className="overflow-hidden bg-white py-10 rounded-lg mt-20">
       <h2 className="text-center text-xl text-primaryDarkBlue font-bold mb-6">
         Some of our valuable clients
       </h2>

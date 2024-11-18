@@ -10,8 +10,8 @@ export default function AchievementStory() {
   const t = achievementTranslations[language] || achievementTranslations["en"];
 
   return (
-    <section className="py-12 px-6 bg-gray-50 rounded-lg">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+    <section className="py-12 px-6 bg-white rounded-lg my-10">
+      <div className="mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
         {/* Left Section */}
         <div className="space-y-6">
           <p className="text-sm text-gray-600 uppercase font-medium">
@@ -33,10 +33,6 @@ export default function AchievementStory() {
               </div>
             ))}
           </div>
-
-          <button className="mt-4 px-6 py-2 bg-indigo-600 text-white text-sm font-medium rounded-lg shadow hover:bg-indigo-500 transition">
-            {t.readMore}
-          </button>
         </div>
 
         {/* Right Section */}

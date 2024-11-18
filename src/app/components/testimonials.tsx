@@ -47,7 +47,7 @@ export default function Testimonials() {
   return (
     <section
       aria-label="user-testimonials"
-      className="text-white font-semibold rounded-lg pb-12 mt-20"
+      className="text-white font-semibold rounded-lg mt-20 bg-white"
     >
       <div
         aria-label="testimonials-headers"
@@ -81,7 +81,7 @@ export default function Testimonials() {
         {t.reviews.map((el: Review, index: number) => (
           <div
             key={el.id}
-            className={`absolute inset-0 flex flex-col items-center text-center pb-10 transition-opacity duration-1000 ease-in-out ${
+            className={`absolute inset-0 flex flex-col items-center text-center pb-10 transition-opacity duration-1000 ease-in-out px-4 ${
               index === activeIndex ? "opacity-100 z-10" : "opacity-0 z-0"
             }`}
           >

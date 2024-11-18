@@ -46,7 +46,7 @@ export default function Hero() {
 
   return (
     <section ref={componentRef}>
-      <div className="flex flex-col lg:flex-row items-center px-6 py-12 shadow-md my-20 rounded-lg max-w-[1480px] mx-auto">
+      <div className="flex flex-col lg:flex-row items-center px-6 py-12 shadow-md my-20 rounded-lg max-w-[1480px] mx-auto bg-white">
         {/* Left Section */}
         <div className="left-section lg:w-1/2 text-center lg:text-left">
           <h1 className="text-4xl font-bold text-gray-900">
@@ -71,7 +71,7 @@ export default function Hero() {
           </div>
 
           {/* Statistics Section */}
-          <section className="w-[95%] flex justify-between items-center py-4 bg-gray-100 mt-10 rounded-lg">
+          <section className="w-[95%] flex justify-between items-center py-4 bg-gray-50 mt-10 rounded-lg">
             <div className="text-center border-r pr-2 w-1/3">
               <h3 className="text-3xl font-bold text-primaryOrange">
                 5+ Years
