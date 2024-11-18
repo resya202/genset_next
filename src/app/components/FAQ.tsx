@@ -52,7 +52,7 @@ export default function FAQ() {
   }, []);
 
   return (
-    <section className="shadow-md py-12 px-6 mt-20">
+    <section className="shadow-md py-12 px-6 mt-20 bg-primaryOrange rounded-lg">
       <div className="flex flex-col lg:flex-row items-start gap-8 max-w-7xl mx-auto">
         {/* FAQ Section */}
         <div className="lg:w-2/3">
@@ -70,7 +70,7 @@ export default function FAQ() {
             {t.faqs.map((faq, index) => (
               <div
                 key={index}
-                className={`bg-white p-6 rounded-lg shadow-md hover:shadow-lg hover:shadow-primaryOrange transition-shadow`}
+                className={`bg-white p-6 rounded-lg shadow-md hover:shadow-lg hover:shadow-primaryDarkBlue transition-shadow`}
               >
                 <h3 className="text-lg font-semibold text-gray-800 flex items-center gap-2">
                   <span className="w-8 h-8 flex items-center justify-center bg-primaryBlack text-white rounded-full">

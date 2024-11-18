@@ -25,11 +25,17 @@ export default function Header() {
         <Link href="/" className="hover:text-primaryOrange">
           {t.home}
         </Link>
-        <Link href="about" className="hover:text-primaryOrange">
+        <Link href="/about" className="hover:text-primaryOrange">
           {t.aboutUs}
         </Link>
-        <Link href="products" className="hover:text-primaryOrange">
+        <Link href="/products" className="hover:text-primaryOrange">
           {t.products}
+        </Link>
+        <Link href="/clients" className="hover:text-primaryOrange">
+          {t.clients}
+        </Link>
+        <Link href="/services" className="hover:text-primaryOrange">
+          {t.services}
         </Link>
       </nav>
 

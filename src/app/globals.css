@@ -19,3 +19,35 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  @keyframes marquee-left {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  @keyframes marquee-right {
+    from {
+      transform: translateX(-50%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+  }
+
+  .animate-marquee-left {
+    animation: marquee-left 20s linear infinite; /* Slower speed for smoother animation */
+  }
+
+  .animate-marquee-right {
+    animation: marquee-right 20s linear infinite; /* Slower speed for smoother animation */
+  }
+}

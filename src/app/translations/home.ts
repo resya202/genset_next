@@ -1,3 +1,5 @@
+import { CoverImageObjects } from "./about";
+
 export type SupportedLanguages = "en" | "id";
 
 export const headerTranslations: Record<SupportedLanguages, {
@@ -5,20 +7,38 @@ export const headerTranslations: Record<SupportedLanguages, {
     aboutUs: string;
     products: string;
     bookNow: string;
+    clients: string;
+    services: string;
 }> = {
     en: {
         home: "Home",
         aboutUs: "About Us",
         products: "Products",
         bookNow: "Book Now",
+        clients: "Clients",
+        services: "Services",
     },
     id: {
         home: "Beranda",
         aboutUs: "Tentang Kami",
         products: "Produk",
         bookNow: "Pesan Sekarang",
+        clients: "Klien",
+        services: "Servis",
     },
 };
+
+export const homeCoverImage: CoverImageObjects = {
+    en: {
+        title: "Home Page",
+        description: "BPN Indonesia is a great company",
+    },
+    id: {
+        title: "Halaman Utama",
+        description: "BPN Indonesia adalah perusahaan besar",
+    },
+};
+
 
 // translations/home.ts
 export const heroTranslations = {

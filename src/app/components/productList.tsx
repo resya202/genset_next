@@ -123,7 +123,7 @@ export default function ProductList() {
 
         {/* Join */}
         <div className="w-full px-2 md:px-7 -mt-40">
-          <div className="w-full min-h-[400px] bg-neutral-100 rounded-2xl flex flex-col lg:flex-row overflow-hidden text-black">
+          <div className="w-full min-h-[400px] bg-primaryOrange rounded-2xl flex flex-col lg:flex-row overflow-hidden text-black">
             <div className="flex flex-col items-start w-full max-w-xl p-6 md:p-10">
               <p className="text-3xl md:text-[40px] font-medium md:leading-snug">
                 {t.joinHeading}
@@ -144,7 +144,7 @@ export default function ProductList() {
                 </button>
               </div>
             </div>
-            <div className="w-full h-96 md:h-auto md:grow relative">
+            <div className="w-full h-[27rem] md:h-auto md:grow relative">
               <Image
                 src="/products/IMG_8315.webp"
                 alt="holding-house"

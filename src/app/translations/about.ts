@@ -1,3 +1,25 @@
+
+export type CoverImageObjects = {
+    [locale: string]: {
+        title: string;
+        description: string;
+    };
+};
+
+
+export const aboutCoverImage: CoverImageObjects = {
+    en: {
+        title: "About Us",
+        description: "BPN Indonesia is a great company",
+    },
+    id: {
+        title: "Tentang Kami",
+        description: "BPN Indonesia adalah perusahaan besar",
+    },
+};
+
+
+
 export const achievementTranslations = {
     en: {
         sectionTitle: "About Us",

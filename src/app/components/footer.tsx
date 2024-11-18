@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 "use client";
 
 import Link from "next/link";
@@ -9,6 +10,7 @@ import { IoLogoYoutube } from "react-icons/io";
 import { MdAlternateEmail } from "react-icons/md";
 import { GrMapLocation } from "react-icons/gr";
 import { IoLogoWhatsapp } from "react-icons/io";
+import Image from "next/image";
 
 export default function Footer() {
   const { language } = useLanguage();
@@ -85,11 +87,15 @@ export default function Footer() {
         {/* Newsletter Section */}
         <div className="w-1/3">
           <div className="flex items-center gap-2 mb-4">
-            <img
-              src="/BPN-Logo.png"
-              alt="Pagedone Logo"
-              className="w-8 h-8 object-cover"
-            />
+            <div className="relative size-8">
+              <Image
+                src="/BPN-Logo.png"
+                alt="Logo"
+                fill
+                className="object-cover"
+              />
+            </div>
+
             <h4 className="text-lg font-bold">{t.newsletterTitle}</h4>
           </div>
           <p className="text-sm mb-4">{t.newsletterDescription}</p>
@@ -112,12 +118,12 @@ export default function Footer() {
                 <Link href="https://instagram.com">
                   <FaInstagram className="text-2xl text-red-400" />
                 </Link>
-                <Link href="https://facebook.com">
+                {/* <Link href="https://facebook.com">
                   <FaFacebook className="text-2xl text-blue-500" />
                 </Link>
                 <Link href="https://youtube.com">
                   <IoLogoYoutube className="text-2xl text-red-500" />
-                </Link>
+                </Link> */}
               </div>
               <p className="text-black text-sm mt-4">
                 Or you can click these icons to go to our social media page!

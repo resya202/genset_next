@@ -59,7 +59,7 @@ export default function RootLayout({
       </head>
 
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-100 scrollbar-none`}
       >
         <LanguageProvider>
           <LayoutWrapper>{children}</LayoutWrapper>

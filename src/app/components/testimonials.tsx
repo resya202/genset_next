@@ -47,7 +47,7 @@ export default function Testimonials() {
   return (
     <section
       aria-label="user-testimonials"
-      className="text-white font-semibold shadow-md rounded-lg pb-12 mt-20"
+      className="text-white font-semibold rounded-lg pb-12 mt-20"
     >
       <div
         aria-label="testimonials-headers"
@@ -59,7 +59,7 @@ export default function Testimonials() {
 
       <div
         aria-label="testimonials-body"
-        className="relative max-w-[95%] h-[40rem] mx-auto overflow-hidden rounded-lg shadow-lg"
+        className="relative h-[40rem] mx-auto overflow-hidden rounded-lg shadow-lg"
       >
         {/* Arrow navigation */}
         <button
@@ -94,8 +94,8 @@ export default function Testimonials() {
                 className="object-cover w-full h-full"
               />
             </div>
-            <div className="bg-primaryDarkBlue text-white p-6 mt-6 rounded-lg max-w-2xl">
-              <p className="text-lg italic mb-4">"{el.testimonial}"</p>
+            <div className="text-primaryDarkBlue p-6 mt-6 rounded-lg max-w-2xl">
+              <p className="text-lg italic mb-4">{el.testimonial}</p>
               <p className="font-bold">{el.name}</p>
               <p className="text-sm">{el.companyName}</p>
             </div>
