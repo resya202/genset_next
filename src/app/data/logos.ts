@@ -58,6 +58,130 @@ export const circleLogo3 = [
     "/logos/circle/logo-ykk.png",
 ];
 
+export const squareLogosWithYears = [
+    {
+        logo: "/logos/square/logo-indomobil.png",
+        companyName: "Indomobil",
+        partneredYears: "2020 - Present",
+    },
+    {
+        logo: "/logos/square/logo-aeon.png",
+        companyName: "AEON Group",
+        partneredYears: "2018 - Present",
+    },
+    {
+        logo: "/logos/square/logo-azhar.png",
+        companyName: "Azhar Corporation",
+        partneredYears: "2021 - Present",
+    },
+    {
+        logo: "/logos/square/logo-alstom.png",
+        companyName: "Alstom",
+        partneredYears: "2019 - Present",
+    },
+    {
+        logo: "/logos/square/logo-bakrie.png",
+        companyName: "Bakrie Group",
+        partneredYears: "2015 - Present",
+    },
+    {
+        logo: "/logos/square/logo-cuan.png",
+        companyName: "Cuan Industries",
+        partneredYears: "2020 - Present",
+    },
+    {
+        logo: "/logos/square/logo-sakura.png",
+        companyName: "Sakura Hotel",
+        partneredYears: "2022 - Present",
+    },
+    {
+        logo: "/logos/square/logo-obayashi.png",
+        companyName: "Obayashi Corporation",
+        partneredYears: "2017 - Present",
+    },
+    {
+        logo: "/logos/square/logo-kajima.png",
+        companyName: "Kajima Corporation",
+        partneredYears: "2018 - Present",
+    },
+    {
+        logo: "/logos/square/logo-kpp.png",
+        companyName: "KPP Group",
+        partneredYears: "2020 - Present",
+    },
+    {
+        logo: "/logos/square/logo-lotte.png",
+        companyName: "Lotte",
+        partneredYears: "2016 - Present",
+    },
+    {
+        logo: "/logos/square/logo-menteng.png",
+        companyName: "Menteng Group",
+        partneredYears: "2019 - Present",
+    },
+    {
+        logo: "/logos/square/logo-nusantara.png",
+        companyName: "Nusantara Tiga",
+        partneredYears: "2021 - Present",
+    },
+    {
+        logo: "/logos/square/logo-pasaraya.png",
+        companyName: "Pasaraya",
+        partneredYears: "2022 - Present",
+    },
+    {
+        logo: "/logos/square/logo-pelindo.png",
+        companyName: "Pelindo",
+        partneredYears: "2020 - Present",
+    },
+    {
+        logo: "/logos/square/logo-pertamina.png",
+        companyName: "Pertamina",
+        partneredYears: "2018 - Present",
+    },
+    {
+        logo: "/logos/square/logo-PLN.png",
+        companyName: "PLN",
+        partneredYears: "2015 - Present",
+    },
+    {
+        logo: "/logos/square/logo-PSN.png",
+        companyName: "PSN",
+        partneredYears: "2019 - Present",
+    },
+    {
+        logo: "/logos/square/logo-ptpn.png",
+        companyName: "PTPN",
+        partneredYears: "2020 - Present",
+    },
+    {
+        logo: "/logos/square/logo-schneider.png",
+        companyName: "Schneider Electric",
+        partneredYears: "2016 - Present",
+    },
+    {
+        logo: "/logos/square/logo-sinarmas.png",
+        companyName: "Sinarmas",
+        partneredYears: "2017 - Present",
+    },
+    {
+        logo: "/logos/square/logo-taiyo.png",
+        companyName: "Taiyo",
+        partneredYears: "2021 - Present",
+    },
+    {
+        logo: "/logos/square/logo-yamaha.png",
+        companyName: "Yamaha",
+        partneredYears: "2020 - Present",
+    },
+    {
+        logo: "/logos/square/logo-ykk.png",
+        companyName: "YKK",
+        partneredYears: "2018 - Present",
+    },
+];
+
+
 export const squareLogos = [
     "/logos/square/logo-indomobil.png",
     "/logos/square/logo-aeon.png",

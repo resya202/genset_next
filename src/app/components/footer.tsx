@@ -54,7 +54,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/pricing">
+                <Link href="/products">
                   <p className=" hover:text-primaryOrange">{t.products}</p>
                 </Link>
               </li>

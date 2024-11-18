@@ -1,3 +1,18 @@
+import { CoverImageObjects } from "./about";
+
+export const clientCoverImage: CoverImageObjects = {
+    en: {
+        title: "Track Record",
+        description: "We collaborate with numerous companies, demonstrating exceptional commitment to delivery and responsibility.",
+    },
+    id: {
+        title: "Rekam Jejak",
+        description: "Kami berkolaborasi dengan banyak perusahaan, menunjukkan komitmen luar biasa terhadap pengiriman dan tanggung jawab.",
+    },
+};
+
+
+
 export const collageData = [
     {
         images: [

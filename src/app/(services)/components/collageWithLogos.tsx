@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+import { squareLogos } from "@/app/data/logos";
 import { useLanguage } from "@/app/context/languageContext";
 import { collageData } from "@/app/translations/client";
 import LogosWithText from "./logosWithText";
