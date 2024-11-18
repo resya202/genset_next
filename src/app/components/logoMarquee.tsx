@@ -1,40 +1,8 @@
 import React from "react";
 import Image from "next/image";
+import { circleLogo1, circleLogo2, circleLogo3 } from "../data/logos";
 
 const LogoMarquee = () => {
-  const logosRow1 = [
-    "/logos/circle/logo-indomobil.png",
-    "/logos/circle/logo-aeon.png",
-    "/logos/circle/logo-azhar.png",
-    "/logos/circle/logo-alstom.png",
-    "/logos/circle/logo-bakrie.png",
-    "/logos/circle/logo-cuan.png",
-    "/logos/circle/logo-sakura.png",
-    "/logos/circle/logo-obayashi.png",
-  ];
-
-  const logosRow2 = [
-    "/logos/circle/logo-kajima.png",
-    "/logos/circle/logo-kpp.png",
-    "/logos/circle/logo-lotte.png",
-    "/logos/circle/logo-menteng.png",
-    "/logos/circle/logo-nusantara-tiga.png",
-    "/logos/circle/logo-pasaraya.png",
-    "/logos/circle/logo-pelindo.png",
-    "/logos/circle/logo-pertamina.png",
-  ];
-
-  const logosRow3 = [
-    "/logos/circle/logo-PLN.png",
-    "/logos/circle/logo-PSN.png",
-    "/logos/circle/logo-ptpn.png",
-    "/logos/circle/logo-schneider.png",
-    "/logos/circle/logo-sinarmas.png",
-    "/logos/circle/logo-taiyo.png",
-    "/logos/circle/logo-yamaha.png",
-    "/logos/circle/logo-ykk.png",
-  ];
-
   const renderRow = (
     logos: string[],
     direction: "left" | "right",
@@ -69,11 +37,11 @@ const LogoMarquee = () => {
       </h2>
       <div className="w-full space-y-6">
         {/* First row */}
-        <div className="w-full">{renderRow(logosRow1, "right", "row1")}</div>
+        <div className="w-full">{renderRow(circleLogo1, "right", "row1")}</div>
         {/* Second row */}
-        <div className="w-full">{renderRow(logosRow2, "left", "row2")}</div>
+        <div className="w-full">{renderRow(circleLogo2, "left", "row2")}</div>
         {/* Third row */}
-        <div className="w-full">{renderRow(logosRow3, "right", "row3")}</div>
+        <div className="w-full">{renderRow(circleLogo3, "right", "row3")}</div>
       </div>
     </div>
   );

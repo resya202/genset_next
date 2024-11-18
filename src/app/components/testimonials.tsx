@@ -29,7 +29,7 @@ export default function Testimonials() {
       );
     }, 8000);
 
-    return () => clearInterval(interval); // Clean up on component unmount
+    return () => clearInterval(interval);
   }, [t.reviews.length]);
 
   const handleNext = () => {
@@ -61,7 +61,6 @@ export default function Testimonials() {
         aria-label="testimonials-body"
         className="relative h-[40rem] mx-auto overflow-hidden rounded-lg shadow-lg"
       >
-        {/* Arrow navigation */}
         <button
           aria-label="previous-slide"
           onClick={handlePrev}
