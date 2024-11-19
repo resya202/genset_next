@@ -13,7 +13,7 @@ export default function Products() {
         imageSrc="/FAQ/IMG_7299.webp"
         translationObject={clientCoverImage}
       />
-      <div className="min-h-screen my-10 max-w-[1480px] mx-auto">
+      <div className="min-h-screen my-10 max-w-[1480px] mx-auto bg-white p-6 rounded-lg">
         <FawdeTable />
         <KubotaTable />
         <CumminsTable />

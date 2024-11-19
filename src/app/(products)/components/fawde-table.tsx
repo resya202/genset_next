@@ -2,10 +2,21 @@
 
 import React from "react";
 import { fawdeTableData } from "@/app/data/tableData";
+import Link from "next/link";
 const FawdeTable = () => {
   return (
     <div className="p-4 text-black">
-      <h1 className="text-2xl font-bold mb-4">FAWDE Products</h1>
+      <div className="flex justify-between items-center my-4">
+        <h1 className="text-2xl font-bold mb-4">Fawde Products</h1>
+        <Link
+          href="/PDF/fawde_list.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-primaryOrange p-4 text-black font-semibold hover:bg-primaryDarkBlue hover:text-white rounded-lg"
+        >
+          Download Pamflet
+        </Link>
+      </div>
       <table className="table-auto w-full border-collapse border border-gray-300">
         <thead>
           <tr>
