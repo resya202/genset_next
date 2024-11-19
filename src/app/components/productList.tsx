@@ -5,6 +5,7 @@ import Image from "next/image";
 import { FaArrowUp } from "react-icons/fa";
 import { useLanguage } from "../context/languageContext";
 import { productTranslations } from "../translations/home";
+import ContactForm from "./EmailForm";
 
 type GeneratorHighlight = {
   generator: string;
@@ -131,18 +132,7 @@ export default function ProductList() {
               <p className="text-lg md:text-xl font-light mt-10">
                 {t.emailPrompt}
               </p>
-              <div className="flex border rounded-lg bg-white overflow-hidden mt-6 p-0 w-full md:w-auto">
-                <input
-                  type="text"
-                  className="outline-none pl-4 md:px-4 py-3 grow lg:min-w-80 placeholder:text-sm"
-                  placeholder={t.emailPlaceholder}
-                />
-                <button>
-                  <p className="text-sm text-white md:text-base px-3 md:px-5 py-3 bg-primaryBlack text-lemongrass rounded-md font-semibold tracking-wide transition-colors hover:bg-primaryOrange">
-                    {t.submitButton}
-                  </p>
-                </button>
-              </div>
+              <ContactForm />
             </div>
             <div className="w-full h-[27rem] md:h-auto md:grow relative">
               <Image
