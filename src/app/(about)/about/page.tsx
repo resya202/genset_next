@@ -16,7 +16,7 @@ export default function AboutPage() {
       <div className="my-10 max-w-[1480px] mx-auto">
         <AchievementStory />
 
-        <LogoMarquee />
+        <LogoMarquee title="some of our clients"/>
       </div>
     </section>
   );
