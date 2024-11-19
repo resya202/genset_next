@@ -16,7 +16,7 @@ export default function Header() {
         src="/BPN-Logo.png"
         width={60}
         height={60}
-        className="object-cover rounded-full"
+        className="object-cover rounded-full border-2 border-white"
         alt="Company Logo"
       />
 

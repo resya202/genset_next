@@ -1,10 +1,9 @@
 import React from "react";
-import FawdeTable from "../components/fawde-table";
-import KubotaTable from "../components/kubota-table";
-import CumminsTable from "../components/cummins-table";
-import PerkinsTable from "../components/perkins-table";
 import CoverImage from "@/app/components/coverImage";
 import { clientCoverImage } from "@/app/translations/client";
+import NavTabs from "../components/navTabs";
+import LogoMarquee from "@/app/components/logoMarquee";
+import GensetTypes from "../components/GensetType";
 
 export default function Products() {
   return (
@@ -13,11 +12,11 @@ export default function Products() {
         imageSrc="/FAQ/IMG_7299.webp"
         translationObject={clientCoverImage}
       />
-      <div className="min-h-screen my-10 max-w-[1480px] mx-auto bg-white p-6 rounded-lg">
-        <FawdeTable />
-        <KubotaTable />
-        <CumminsTable />
-        <PerkinsTable />
+      <div className="my-10 max-w-[1480px] mx-auto p-6">
+        <NavTabs />
+
+        <GensetTypes />
+        <LogoMarquee title="Some of our satisfied clients" />
       </div>
     </section>
   );
