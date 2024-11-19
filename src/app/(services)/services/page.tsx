@@ -3,6 +3,7 @@ import React from "react";
 import { servicesCoverImage } from "@/app/translations/services";
 import FeaturesSection from "../components/feature";
 import Testimonials from "@/app/components/testimonials";
+import LogoMarquee from "@/app/components/logoMarquee";
 
 export default function ClientsPage() {
   return (
@@ -16,6 +17,8 @@ export default function ClientsPage() {
         <FeaturesSection />
 
         <Testimonials />
+
+        <LogoMarquee title="Our Satisfied Clients" />
       </div>
     </section>
   );

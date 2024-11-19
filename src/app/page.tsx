@@ -47,7 +47,7 @@ export default function Home() {
         <FAQ />
         <Testimonials />
 
-        <LogoMarquee />
+        <LogoMarquee title="Some of our valuable clients" />
         <ProductList />
       </div>
     </div>
