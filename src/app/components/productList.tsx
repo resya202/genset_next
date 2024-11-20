@@ -47,10 +47,9 @@ export default function ProductList() {
   const t = productTranslations[language] || productTranslations["en"];
 
   return (
-    <section className="mt-20 px-4 md:px-8">
-      <div>
-        {/* Generator */}
-        <div className="w-full p-6 md:p-7 bg-primaryDarkBlue rounded-2xl flex flex-col">
+    <section className="mt-20">
+      <div className="">
+        <div className="w-full p-4 md:p-7 bg-primaryDarkBlue rounded-2xl flex flex-col">
           <div className="w-full flex flex-col gap-6 md:flex-row md:items-center justify-between">
             <h1 className="font-medium text-white text-2xl md:text-[40px] md:leading-snug max-w-lg">
               {t.generatorHeading}
@@ -70,17 +69,18 @@ export default function ProductList() {
             </div>
           </div>
 
-          <div className="w-full flex gap-2 mt-20">
-            <div className="flex w-full gap-4 h-96">
+          <div className="w-full flex flex-col md:flex-row gap-4 mt-20">
+            <div className="flex md:flex-row flex-col w-full gap-4 h-full md:h-96">
               {generatorHighlightDummy.map((item, idx) => (
                 <div
                   key={idx}
                   className={cnm(
-                    "w-full flex-grow flex-shrink-0 basis-1/6 rounded-2xl overflow-hidden relative bg-primaryBlack flex flex-col group transition-all duration-500 ease-in-out",
-                    "hover:flex-grow-[3] hover:basis-[25%]"
+                    "flex-grow flex-shrink-0 md:basis-1/6 rounded-2xl overflow-hidden relative bg-primaryBlack flex flex-col group transition-all duration-500 ease-in-out",
+                    "hover:flex-grow-[3] hover:md:basis-[25%]"
                   )}
                 >
-                  <div className="relative w-full h-full overflow-hidden">
+                  {/* Image Container */}
+                  <div className="relative w-full h-64 md:h-full overflow-hidden">
                     <Image
                       src={item.image}
                       className="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
@@ -90,11 +90,14 @@ export default function ProductList() {
                     />
                   </div>
 
-                  <div className="absolute w-full h-[40%] pointer-events-none bg-gradient-to-b from-transparent to-white/20 bottom-0"></div>
-                  <div className="flex flex-col-reverse gap-4 md:gap-0 md:flex-row md:items-center justify-between w-full mt-auto p-4">
-                    <div className="flex flex-col gap-1 mt-auto text-white relative items-start">
+                  {/* Gradient Overlay */}
+                  <div className="absolute w-full h-[10%] md:h-[40%] pointer-events-none bg-gradient-to-b from-transparent to-white/20 bottom-0"></div>
+
+                  {/* Content */}
+                  <div className="flex flex-col md:gap-0 md:flex-row md:items-center justify-between w-full mt-auto p-4">
+                    <div className="flex flex-col gap-1 md:mt-auto text-white relative items-start">
                       <p className="font-semibold text-lg">{item.generator}</p>
-                      <p className="h-0 font-light overflow-hidden opacity-0 group-hover:opacity-100 group-hover:h-10 transition-all duration-500 ease-in-out whitespace-nowrap">
+                      <p className="md:h-0 font-light overflow-hidden md:opacity-0 md:group-hover:opacity-100 md:group-hover:h-10 transition-all duration-500 ease-in-out whitespace-nowrap">
                         Start from{" "}
                         {item.startingPriceUsd.toLocaleString("en-US", {
                           style: "currency",
@@ -102,14 +105,14 @@ export default function ProductList() {
                         })}
                       </p>
                     </div>
-                    <button>
+                    <button className="hidden md:block">
                       <div
                         className={cnm(
                           "w-10 shrink-0 aspect-square rounded-full bg-lemongrass relative opacity-0 flex items-center justify-center",
                           "translate-y-2 group-hover:translate-y-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out"
                         )}
                       >
-                        <FaArrowUp className="text-xl" />
+                        <FaArrowUp className="text-xl text-primaryOrange" />
                       </div>
                     </button>
                   </div>

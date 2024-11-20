@@ -51,10 +51,12 @@ export default function Testimonials() {
     >
       <div
         aria-label="testimonials-headers"
-        className="header margin-auto flex flex-col gap-4 text-center mb-12 bg-primaryDarkBlue py-4 rounded-tr-lg rounded-tl-lg"
+        className="header margin-auto flex flex-col gap-2 md:gap-4 text-center mb-12 bg-primaryDarkBlue py-4 rounded-tr-lg rounded-tl-lg"
       >
-        <h2 className="text-3xl font-bold">{t.title}</h2>
-        <p className="text-sm max-w-2xl mx-auto">{t.subtitle}</p>
+        <h2 className="text-xl md:text-3xl font-bold">{t.title}</h2>
+        <p className="px-10 md:px-0 text-2xs md:text-sm max-w-2xl mx-auto">
+          {t.subtitle}
+        </p>
       </div>
 
       <div
@@ -64,14 +66,14 @@ export default function Testimonials() {
         <button
           aria-label="previous-slide"
           onClick={handlePrev}
-          className="absolute left-4 top-1/2 transform -translate-y-1/2 z-20 bg-primaryDarkBlue text-white rounded-full p-3 hover:bg-primaryOrange transition"
+          className="absolute left-4 top-44 md:top-1/2 transform -translate-y-1/2 z-20 bg-primaryDarkBlue text-white rounded-full p-2 md:p-3 hover:bg-primaryOrange transition"
         >
           <FaArrowLeft size={20} />
         </button>
         <button
           aria-label="next-slide"
           onClick={handleNext}
-          className="absolute right-4 top-1/2 transform -translate-y-1/2 z-20 bg-primaryDarkBlue text-white rounded-full p-3 hover:bg-primaryOrange transition"
+          className="absolute right-4 top-44 md:top-1/2 transform -translate-y-1/2 z-20 bg-primaryDarkBlue text-white rounded-full p-2 md:p-3 hover:bg-primaryOrange transition"
         >
           <FaArrowRight size={20} />
         </button>

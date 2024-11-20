@@ -1,17 +1,18 @@
+"use client";
 import Image from "next/image";
+import { useState } from "react";
 import { useLanguage } from "../context/languageContext";
 import { headerTranslations } from "../translations/home";
 import Link from "next/link";
 
 export default function Header() {
   const { language, toggleLanguage } = useLanguage();
-
-  // Get the correct translations based on the selected language
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
   const t = headerTranslations[language];
 
   return (
     <header className="flex justify-between items-center px-6 py-4 shadow-sm sticky top-0 bg-primaryDarkBlue z-50 text-white">
-      {/* Logo */}
       <Image
         src="/BPN-Logo.png"
         width={60}
@@ -20,28 +21,144 @@ export default function Header() {
         alt="Company Logo"
       />
 
-      {/* Navigation Links */}
-      <nav className="flex gap-6">
-        <Link href="/" className="hover:text-primaryOrange">
-          {t.home}
-        </Link>
-        <Link href="/about" className="hover:text-primaryOrange">
-          {t.aboutUs}
-        </Link>
-        <Link href="/products" className="hover:text-primaryOrange">
-          {t.products}
-        </Link>
-        <Link href="/clients" className="hover:text-primaryOrange">
-          {t.clients}
-        </Link>
-        <Link href="/services" className="hover:text-primaryOrange">
-          {t.services}
-        </Link>
+      <div className="md:hidden">
+        <button
+          className="text-white focus:outline-none"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+        >
+          {isMenuOpen ? (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth="2"
+              stroke="currentColor"
+              className="w-6 h-6"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          ) : (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth="2"
+              stroke="currentColor"
+              className="w-6 h-6"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M4 6h16M4 12h16m-7 6h7"
+              />
+            </svg>
+          )}
+        </button>
+      </div>
+
+      <nav
+        className={`${
+          isMenuOpen ? "block" : "hidden"
+        } md:flex md:gap-6 absolute md:relative top-20 md:top-auto left-0 w-full md:w-auto bg-primaryDarkBlue md:bg-transparent transition-all duration-300 ease-in-out z-40`}
+      >
+        <ul className="flex flex-col md:flex-row items-end mr-4 md:items-center gap-4 md:gap-6 p-4 md:p-0">
+          <li>
+            <Link href="/" className="hover:text-primaryOrange">
+              {t.home}
+            </Link>
+          </li>
+          <li>
+            <Link href="/about" className="hover:text-primaryOrange">
+              {t.aboutUs}
+            </Link>
+          </li>
+          <li>
+            <Link href="/products" className="hover:text-primaryOrange">
+              {t.products}
+            </Link>
+          </li>
+          <li>
+            <Link href="/clients" className="hover:text-primaryOrange">
+              {t.clients}
+            </Link>
+          </li>
+          <li>
+            <Link href="/services" className="hover:text-primaryOrange">
+              {t.services}
+            </Link>
+          </li>
+          <li className="relative">
+            <button
+              onClick={() => setDropdownOpen(!dropdownOpen)}
+              className="py-2 bg-primaryDarkBlue text-white rounded flex items-center gap-2 outline-none"
+            >
+              {language === "en" ? "English" : "Indonesia"}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={2}
+                stroke="currentColor"
+                className={`w-4 h-4 transform transition-transform ${
+                  dropdownOpen ? "rotate-180" : ""
+                }`}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M6 9l6 6 6-6"
+                />
+              </svg>
+            </button>
+            {dropdownOpen && (
+              <ul className="absolute -right-4 pr-4 bg-primaryDarkBlue text-white border border-gray-300 mt-2 rounded shadow-lg">
+                <li>
+                  <button
+                    onClick={() => {
+                      toggleLanguage("en");
+                      setDropdownOpen(false);
+                    }}
+                    className="px-4 py-2 w-full text-left hover:bg-gray-700 flex gap-2 items-center"
+                  >
+                    <Image
+                      src="/flags/united-kingdom.png"
+                      alt="English Flag"
+                      width={20}
+                      height={20}
+                      className="object-cover"
+                    />
+                    English
+                  </button>
+                </li>
+                <li>
+                  <button
+                    onClick={() => {
+                      toggleLanguage("id");
+                      setDropdownOpen(false);
+                    }}
+                    className="px-4 py-2 w-full text-left hover:bg-gray-700 flex gap-2 items-center"
+                  >
+                    <Image
+                      src="/flags/indonesia.png"
+                      alt="Indonesian Flag"
+                      width={20}
+                      height={20}
+                      className="object-cover"
+                    />
+                    Indonesia
+                  </button>
+                </li>
+              </ul>
+            )}
+          </li>
+        </ul>
       </nav>
 
-      {/* Language Selector and Booking Button */}
-      <div className="flex gap-6 items-center">
-        {/* English Flag */}
+      <div className="hidden md:flex gap-6 items-center">
         <button
           className="w-10 h-10 rounded-full overflow-hidden"
           onClick={() => toggleLanguage("en")}
@@ -55,7 +172,6 @@ export default function Header() {
           />
         </button>
 
-        {/* Indonesian Flag */}
         <button
           className="w-10 h-10 rounded-full overflow-hidden"
           onClick={() => toggleLanguage("id")}
@@ -69,7 +185,6 @@ export default function Header() {
           />
         </button>
 
-        {/* Booking Button */}
         <button className="px-4 py-2 text-sm text-black bg-primaryOrange font-bold rounded-lg hover:bg-white hover:text-black">
           {t.bookNow}
         </button>

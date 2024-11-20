@@ -52,7 +52,7 @@ export default function FAQ() {
   }, []);
 
   return (
-    <section className="shadow-md py-12 px-6 mt-20 bg-primaryOrange rounded-lg">
+    <section className="shadow-md h-full py-12 px-6 mt-20 bg-primaryOrange rounded-lg">
       <div className="flex flex-col lg:flex-row items-start gap-8 max-w-7xl mx-auto">
         {/* FAQ Section */}
         <div className="lg:w-2/3">
@@ -102,7 +102,7 @@ export default function FAQ() {
         {/* Image Section */}
         <div
           ref={imageRef}
-          className={`lg:w-1/3 flex justify-center items-center transition-transform duration-700 ${
+          className={`hidden lg:w-1/3 md:flex justify-center items-center transition-transform duration-700 ${
             isImageVisible
               ? "translate-x-0 opacity-100"
               : "translate-x-20 opacity-0"

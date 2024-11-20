@@ -8,9 +8,7 @@ import { heroTranslations } from "../translations/home";
 export default function Hero() {
   const { language } = useLanguage();
 
-  // Get the correct translations based on the selected language
   const t = heroTranslations[language];
-
   const componentRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -19,7 +17,6 @@ export default function Hero() {
         defaults: { ease: "power1.out", duration: 0.8 },
       });
 
-      // Animate left section elements
       timeline
         .from(".left-section h1", { x: -50, opacity: 0 })
         .from(".left-section p", { x: -50, opacity: 0 }, "-=0.4")
@@ -30,7 +27,6 @@ export default function Hero() {
         )
         .from(".left-section section", { x: -50, opacity: 0 }, "-=0.4");
 
-      // Animate right section after left section finishes
       gsap.from(".right-section", {
         x: 50,
         opacity: 0,
@@ -40,15 +36,13 @@ export default function Hero() {
       });
     }, componentRef);
 
-    // Cleanup to avoid memory leaks
     return () => ctx.revert();
   }, []);
 
   return (
     <section ref={componentRef}>
-      <div className="flex flex-col lg:flex-row items-center px-6 py-12 shadow-md my-20 rounded-lg max-w-[1480px] mx-auto bg-white">
-        {/* Left Section */}
-        <div className="left-section lg:w-1/2 text-center lg:text-left">
+      <div className="flex flex-col md:flex-row items-center px-4 md:px-10 py-12 shadow-md my-20 rounded-md max-w-[1480px] mx-auto bg-white ">
+        <div className="left-section md:w-1/2 text-center md:text-left">
           <h1 className="text-4xl font-bold text-gray-900">
             {t.heading.split(" ").map((word, i) =>
               word === "journey" || word === "perjalanan" ? (
@@ -61,7 +55,7 @@ export default function Hero() {
             )}
           </h1>
           <p className="mt-4 text-gray-600">{t.description}</p>
-          <div className="mt-6 flex justify-center lg:justify-start gap-4">
+          <div className="mt-6 flex flex-col md:flex-row justify-center lg:justify-start gap-4">
             <button className="px-6 py-3 bg-primaryBlack text-white rounded-lg hover:bg-primaryOrange hover:text-black font-semibold">
               {t.bookingButton}
             </button>
@@ -70,28 +64,30 @@ export default function Hero() {
             </button>
           </div>
 
-          {/* Statistics Section */}
-          <section className="w-[95%] flex justify-between items-center py-4 bg-gray-50 mt-10 rounded-lg">
+          <section className="w-full md:w-[95%] flex justify-between items-center py-4 bg-gray-50 mt-10 rounded-lg text-lg md:text-3xl">
             <div className="text-center border-r pr-2 w-1/3">
-              <h3 className="text-3xl font-bold text-primaryOrange">
-                5+ Years
-              </h3>
-              <p className="text-gray-600">{t.statistics.yearsOperated}</p>
+              <h3 className="font-bold text-primaryOrange">5+ Years</h3>
+              <p className="text-xs text-gray-600">
+                {t.statistics.yearsOperated}
+              </p>
             </div>
             <div className="text-center border-r pr-2 w-1/3">
-              <h3 className="text-3xl font-bold text-primaryOrange">1000+</h3>
-              <p className="text-gray-600">{t.statistics.satisfiedBuyers}</p>
+              <h3 className="font-bold text-primaryOrange">1000+</h3>
+              <p className="text-xs text-gray-600">
+                {t.statistics.satisfiedBuyers}
+              </p>
             </div>
             <div className="text-center pr-2 w-1/3">
-              <h3 className="text-3xl font-bold text-primaryOrange">90%</h3>
-              <p className="text-gray-600">{t.statistics.satisfiedRate}</p>
+              <h3 className="font-bold text-primaryOrange">90%</h3>
+              <p className="text-xs text-gray-600">
+                {t.statistics.satisfiedRate}
+              </p>
             </div>
           </section>
         </div>
 
-        {/* Right Section */}
-        <div className="right-section lg:w-1/2 mt-8 lg:mt-0 relative flex justify-center items-center">
-          <div className="relative w-full h-[400px] lg:h-[500px] rounded-lg overflow-hidden shadow-md">
+        <div className="right-section w-full lg:w-1/2 mt-8 lg:mt-0 relative flex justify-center items-center flex-col md:flex-row gap-8">
+          <div className="relative w-full h-[15rem] lg:h-[500px] rounded-lg overflow-hidden shadow-md">
             <Image
               src="/genset/IMG_7822.webp"
               alt={language === "en" ? "Plane" : "Pesawat"}
@@ -101,8 +97,8 @@ export default function Hero() {
             />
           </div>
 
-          <div className="absolute w-[24rem] h-[15rem] bottom-0 left-0 bg-white flex items-end justify-start rounded-tr-lg rounded-bl-lg rounded-br-lg">
-            <div className="w-[95%] h-[93%] rounded-lg overflow-hidden shadow-lg">
+          <div className="md:absolute w-full md:w-[24rem] md:h-[15rem] bottom-0 left-0 bg-white flex items-end justify-start rounded-tr-lg rounded-bl-lg rounded-br-lg">
+            <div className="w-full h-full md:w-[95%] md:h-[93%] rounded-lg overflow-hidden shadow-lg">
               <Image
                 src="/genset/IMG_7776.webp"
                 alt={language === "en" ? "Woman" : "Wanita"}

@@ -90,7 +90,7 @@ export default function Features() {
 
       {/* Image Section */}
       <div className="lg:w-1/2 flex justify-center">
-        <div className="relative image-container w-[400px] h-[300px] lg:w-[500px] lg:h-[400px] rounded-lg overflow-hidden shadow-lg">
+        <div className="relative mx-4 image-container w-[20rem] h-[20rem] lg:w-[500px] lg:h-[400px] rounded-lg overflow-hidden shadow-lg">
           <Image
             src="/features/IMG_7124.webp"
             alt={t.heading || "Workspace Image"}

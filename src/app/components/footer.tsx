@@ -17,77 +17,78 @@ export default function Footer() {
   const t = footerTranslations[language];
 
   return (
-    <footer className="bg-primaryDarkBlue border-t px-8 py-6 mt-20 rounded-tr-lg rounded-tl-lg">
-      <div className=" px-6 mx-auto flex text-white">
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 w-2/3">
-          <div>
-            <h4 className="text-lg font-bold mb-4">{t.contactTitle}</h4>
-            <Link
-              href={process.env.NEXT_PUBLIC_MAPS_LOCATION!}
-              className="flex items-center gap-2 hover:text-primaryOrange mb-2"
-            >
-              <GrMapLocation className="text-2xl text-primaryOrange" />
-              {t.contactAddress}
-            </Link>
-            <p className="flex items-center gap-2 hover:text-primaryOrange mb-2">
-              <IoLogoWhatsapp className="text-2xl text-primaryOrange" />
-              {t.contactPhone}
-            </p>
-            <p className="flex items-center gap-2 hover:text-primaryOrange">
-              <MdAlternateEmail className="text-2xl text-primaryOrange" />
-              {t.contactEmail}
-            </p>
-          </div>
+    <footer className="bg-primaryDarkBlue border-t px-4 md:px-8 py-6 mt-20 rounded-tr-lg rounded-tl-lg">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full text-white">
+        {/* Contact Section */}
+        <div>
+          <h4 className="text-lg text-center md:text-start font-bold mb-4 mx-auto">
+            {t.contactTitle}
+          </h4>
+          <Link
+            href={process.env.NEXT_PUBLIC_MAPS_LOCATION!}
+            className="flex items-center gap-2 hover:text-primaryOrange mb-2"
+          >
+            <GrMapLocation className="text-2xl text-primaryOrange" />
+            {t.contactAddress}
+          </Link>
+          <p className="flex items-center gap-2 hover:text-primaryOrange mb-2">
+            <IoLogoWhatsapp className="text-2xl text-primaryOrange" />
+            {t.contactPhone}
+          </p>
+          <p className="flex items-center gap-2 hover:text-primaryOrange">
+            <MdAlternateEmail className="text-2xl text-primaryOrange" />
+            {t.contactEmail}
+          </p>
+        </div>
 
-          {/* Links Section */}
-          <div>
-            <h4 className="text-lg font-bold mb-4">{t.pagedone}</h4>
-            <ul className="space-y-2">
-              <li>
-                <Link href="/">
-                  <p className=" hover:text-primaryOrange">{t.home}</p>
-                </Link>
-              </li>
-              <li>
-                <Link href="/about">
-                  <p className=" hover:text-primaryOrange">{t.about}</p>
-                </Link>
-              </li>
-              <li>
-                <Link href="/products">
-                  <p className=" hover:text-primaryOrange">{t.products}</p>
-                </Link>
-              </li>
-            </ul>
-          </div>
+        {/* Links Section */}
+        <div className="hidden md:block">
+          <h4 className="text-lg font-bold mb-4">{t.pagedone}</h4>
+          <ul className="space-y-2">
+            <li>
+              <Link href="/">
+                <p className="hover:text-primaryOrange">{t.home}</p>
+              </Link>
+            </li>
+            <li>
+              <Link href="/about">
+                <p className="hover:text-primaryOrange">{t.about}</p>
+              </Link>
+            </li>
+            <li>
+              <Link href="/products">
+                <p className="hover:text-primaryOrange">{t.products}</p>
+              </Link>
+            </li>
+          </ul>
+        </div>
 
-          {/* Resources Section */}
-          <div>
-            <h4 className="text-lg font-bold mb-4">{t.resources}</h4>
-            <ul className="space-y-2">
-              <li>
-                <Link href="/faq">
-                  <p className="hover:text-primaryOrange">{t.faqs}</p>
-                </Link>
-              </li>
-              <li>
-                <Link href="/quick-start">
-                  <p className="hover:text-primaryOrange">{t.quickStart}</p>
-                </Link>
-              </li>
-              <li>
-                <Link href="/documentation">
-                  <p className="hover:text-primaryOrange">{t.documentation}</p>
-                </Link>
-              </li>
-            </ul>
-          </div>
+        {/* Resources Section */}
+        <div className="hidden md:block">
+          <h4 className="text-lg font-bold mb-4">{t.resources}</h4>
+          <ul className="space-y-2">
+            <li>
+              <Link href="/faq">
+                <p className="hover:text-primaryOrange">{t.faqs}</p>
+              </Link>
+            </li>
+            <li>
+              <Link href="/quick-start">
+                <p className="hover:text-primaryOrange">{t.quickStart}</p>
+              </Link>
+            </li>
+            <li>
+              <Link href="/documentation">
+                <p className="hover:text-primaryOrange">{t.documentation}</p>
+              </Link>
+            </li>
+          </ul>
         </div>
 
         {/* Newsletter Section */}
-        <div className="w-1/3">
+        <div className="hidden md:block w-full">
           <div className="flex items-center gap-2 mb-4">
-            <div className="relative size-8">
+            <div className="relative w-10 h-10">
               <Image
                 src="/BPN-Logo.png"
                 alt="Logo"
@@ -96,38 +97,38 @@ export default function Footer() {
               />
             </div>
 
-            <h4 className="text-lg font-bold">{t.newsletterTitle}</h4>
+            <h4 className="text-sm md:text-lg font-bold">
+              {t.newsletterTitle}
+            </h4>
           </div>
-          <p className="text-sm mb-4">{t.newsletterDescription}</p>
+          <p className="hidden md:block text-sm mb-4">
+            {t.newsletterDescription}
+          </p>
           <div className="bg-white rounded-lg p-4">
-            <div className="flex items-center border rounded-lg overflow-hidden">
+            <div className="flex items-center border rounded-lg overflow-hidden gap-2">
               <input
                 type="email"
-                className="px-4 py-3 outline-none grow placeholder-gray-500"
+                className="px-4 py-3 outline-none grow placeholder-gray-500 w-full md:w-auto"
                 placeholder={t.placeholder}
               />
               <button className="bg-primaryOrange text-white px-4 py-3 hover:bg-primaryOrange transition">
                 {t.subscribe}
               </button>
             </div>
-            <div className="flex gap-4 items-center">
-              <div className="flex items-center gap-4 mt-4 border p-4 rounded-lg w-44">
-                <Link href="https://twitter.com">
-                  <FaSquareXTwitter className="text-2xl text-black" />
-                </Link>
-                <Link href="https://instagram.com">
-                  <FaInstagram className="text-2xl text-red-400" />
-                </Link>
-                {/* <Link href="https://facebook.com">
-                  <FaFacebook className="text-2xl text-blue-500" />
-                </Link>
-                <Link href="https://youtube.com">
-                  <IoLogoYoutube className="text-2xl text-red-500" />
-                </Link> */}
-              </div>
-              <p className="text-black text-sm mt-4">
-                Or you can click these icons to go to our social media page!
-              </p>
+            <div className="flex gap-4 items-center justify-center md:justify-start mt-4 text-black">
+              <Link
+                href="https://twitter.com"
+                className="flex items-center gap-2"
+              >
+                <FaSquareXTwitter className="text-2xl text-black" />X (Twitter)
+              </Link>
+              <Link
+                href="https://instagram.com"
+                className="flex items-center gap-2"
+              >
+                <FaInstagram className="text-2xl text-red-400" />
+                Instagram
+              </Link>
             </div>
           </div>
         </div>

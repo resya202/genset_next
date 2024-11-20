@@ -1,0 +1,23 @@
+
+generator client {
+  provider = "prisma-client-js"
+  output   = "../generated/core-client"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model mst_tracker_data {
+  mtd_id Int @default(autoincrement()) @unique
+  mtd_uuid String @default(uuid())
+  mtd_tracker_name String 
+  mtd_tracker_type trackerType
+  mtd_tracker_data Json
+}
+
+enum trackerType {
+  WHATSAPP
+  EMAIL
+}

@@ -22,16 +22,6 @@ const ContactForm = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-
-    console.log(formData, "< ini form data");
-    // Form Data example
-    // {
-    //     "fullName": "Gerald Ferdinand",
-    //     "email": "geraldferdinand86@gmail.com",
-    //     "contactNumber": "85266735573",
-    //     "subject": "Coba kirim Gmail",
-    //     "message": "Hai saya tertarik untuk bertanya lebih lanjut, boleh nanya kah?"
-    // }
     try {
       const response = await fetch("/api/sendEmail", {
         method: "POST",
@@ -58,10 +48,9 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="flex flex-col md:flex-row gap-6 p-6 max-w-[1200px] mx-auto">
+    <div className="flex flex-col md:flex-row gap-6 max-w-[1200px] mx-auto mt-4">
       {/* Form Section */}
-      <div className="w-full md:w-2/3">
-        <h2 className="text-2xl font-bold mb-4">KIRIMKAN PESAN</h2>
+      <div className="w-full">
         <form onSubmit={handleSubmit} className="space-y-4">
           <input
             type="text"
@@ -108,7 +97,7 @@ const ContactForm = () => {
           />
           <button
             type="submit"
-            className="w-full bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600"
+            className="w-full bg-blue-500 text-white py-2 px-4 rounded hover:bg-primaryDarkBlue"
           >
             Submit
           </button>
