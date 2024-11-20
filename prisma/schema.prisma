@@ -1,23 +1,25 @@
-
 generator client {
   provider = "prisma-client-js"
   output   = "../generated/core-client"
 }
 
 datasource db {
-  provider = "postgresql"
+  provider = "mysql"
   url      = env("DATABASE_URL")
 }
 
-model mst_tracker_data {
-  mtd_id Int @default(autoincrement()) @unique
-  mtd_uuid String @default(uuid())
-  mtd_tracker_name String 
-  mtd_tracker_type trackerType
-  mtd_tracker_data Json
+model Clients {
+  id                 Int     @id @default(autoincrement())
+  cln_full_name      String? @db.VarChar(100)
+  cln_email          String? @db.VarChar(100)
+  cln_contact_number String? @db.VarChar(100)
+  cln_subject        String? @db.VarChar(100)
+  cln_message        String? @db.VarChar(100)
+  cln_date           DateTime @default(now())
 }
 
-enum trackerType {
-  WHATSAPP
-  EMAIL
+model Whatsapp {
+  id         Int      @id @default(autoincrement())
+  wa_counter Int      @default(0)
+  wa_date    DateTime @unique
 }

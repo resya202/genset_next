@@ -10,12 +10,30 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const t = headerTranslations[language];
-  const redirectToWhatsApp = () => {
-      const phoneNumber = "";
-      const message = "Halo, saya tertarik untuk mengetahui lebih lanjut mengenai layanan BPN Energi dan produk genset yang Anda tawarkan. Saya mendapatkan informasi ini melalui situs web Anda.";
-      const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-      window.location.href = whatsappURL;
-    };
+  const redirectToWhatsApp = async () => {
+    const phoneNumber = ""; // Set your actual WhatsApp number here
+    const message = "Halo, saya tertarik untuk mengetahui lebih lanjut mengenai layanan BPN Energi dan produk genset yang Anda tawarkan. Saya mendapatkan informasi ini melalui situs web Anda.";
+    const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+  
+    try {
+      console.log("hit");
+      
+      // Call the API to update the click count
+      await fetch("/api/updateWhatsapp", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+      
+  
+      // Redirect to WhatsApp
+      // window.location.href = whatsappURL;
+    } catch (error) {
+      console.error('Failed to record WhatsApp click:', error);
+    }
+  };
+  
 
   return (
     <header className="flex justify-between items-center px-6 py-4 shadow-sm sticky top-0 bg-primaryDarkBlue z-50 text-white">

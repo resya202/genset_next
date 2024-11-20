@@ -1,9 +1,0 @@
-# *
-User-agent: *
-Allow: /
-
-# Host
-Host:  http://gensetindonesia.shop/
-
-# Sitemaps
-Sitemap:  http://gensetindonesia.shop/sitemap.xml
