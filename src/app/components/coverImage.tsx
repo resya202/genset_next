@@ -18,7 +18,7 @@ export default function CoverImage({
   const t = translationObject[language];
 
   return (
-    <div className="relative w-full h-[35rem]">
+    <div className="relative w-full h-[36rem] md:h-[45rem]">
       <Image
         src={imageSrc}
         alt="Primary About Image"

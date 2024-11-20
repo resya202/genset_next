@@ -67,31 +67,51 @@ export default function Header() {
       >
         <ul className="flex flex-col md:flex-row items-end mr-4 md:items-center gap-4 md:gap-6 p-4 md:p-0">
           <li>
-            <Link href="/" className="hover:text-primaryOrange">
+            <Link
+              onClick={() => setIsMenuOpen(false)}
+              href="/"
+              className="hover:text-primaryOrange"
+            >
               {t.home}
             </Link>
           </li>
           <li>
-            <Link href="/about" className="hover:text-primaryOrange">
+            <Link
+              onClick={() => setIsMenuOpen(false)}
+              href="/about"
+              className="hover:text-primaryOrange"
+            >
               {t.aboutUs}
             </Link>
           </li>
           <li>
-            <Link href="/products" className="hover:text-primaryOrange">
+            <Link
+              onClick={() => setIsMenuOpen(false)}
+              href="/products"
+              className="hover:text-primaryOrange"
+            >
               {t.products}
             </Link>
           </li>
           <li>
-            <Link href="/clients" className="hover:text-primaryOrange">
+            <Link
+              onClick={() => setIsMenuOpen(false)}
+              href="/clients"
+              className="hover:text-primaryOrange"
+            >
               {t.clients}
             </Link>
           </li>
           <li>
-            <Link href="/services" className="hover:text-primaryOrange">
+            <Link
+              onClick={() => setIsMenuOpen(false)}
+              href="/services"
+              className="hover:text-primaryOrange"
+            >
               {t.services}
             </Link>
           </li>
-          <li className="relative">
+          <li className="md:hidden relative">
             <button
               onClick={() => setDropdownOpen(!dropdownOpen)}
               className="py-2 bg-primaryDarkBlue text-white rounded flex items-center gap-2 outline-none"

@@ -41,7 +41,7 @@ const GensetTypes = () => {
   return (
     <section
       ref={componentRef}
-      className="py-12 px-6 bg-white w-full p-6 rounded-lg shadow-md mt-20"
+      className="py-12 px-6 bg-white border w-full p-6 rounded-lg shadow-md mt-20"
     >
       {/* Title */}
       <h1 className="text-3xl font-bold text-center text-primaryDarkBlue mb-12">
@@ -52,7 +52,7 @@ const GensetTypes = () => {
       <div className="flex flex-col md:flex-row justify-between items-center space-y-10 md:space-y-0 md:space-x-10">
         {/* Open Generator Type */}
         <div className="open-generator flex flex-col md:flex-row items-center space-x-6 w-full md:w-1/2">
-          <div className="relative w-64 h-40 rounded-lg flex-shrink-0">
+          <div className="relative w-72 h-44 md:w-64 md:h-40 rounded-lg flex-shrink-0">
             <Image
               src="/genset/open.png"
               alt={t.openGenerator.title}
@@ -61,10 +61,12 @@ const GensetTypes = () => {
             />
           </div>
           <div>
-            <h2 className="text-2xl font-bold text-primaryDarkBlue mb-4">
+            <h2 className="text-2xl font-bold text-primaryDarkBlue my-4">
               {t.openGenerator.title}
             </h2>
-            <p className="text-gray-600 mb-4">{t.openGenerator.description}</p>
+            <p className="text-gray-600 mb-4 pr-4 text-justify">
+              {t.openGenerator.description}
+            </p>
             <button className="bg-primaryOrange text-primaryDarkBlue rounded-lg hover:bg-primaryDarkBlue hover:text-white flex items-center gap-2 p-4">
               <BiSupport className="text-2xl" />
 
@@ -75,7 +77,7 @@ const GensetTypes = () => {
 
         {/* Silent Generator Type */}
         <div className="silent-generator flex flex-col md:flex-row items-center space-x-6 w-full md:w-1/2">
-          <div className="relative w-64 h-40 flex-shrink-0 rounded-lg">
+          <div className="relative w-72 h-44 md:w-64 md:h-40  flex-shrink-0 rounded-lg">
             <Image
               src="/genset/silent.png"
               alt={t.silentGenerator.title}
@@ -84,10 +86,10 @@ const GensetTypes = () => {
             />
           </div>
           <div>
-            <h2 className="text-2xl font-bold text-primaryDarkBlue mb-4">
+            <h2 className="text-2xl mt-4 font-bold text-primaryDarkBlue mb-4">
               {t.silentGenerator.title}
             </h2>
-            <p className="text-gray-600 mb-4">
+            <p className="text-justify pr-4 text-gray-600 mb-4">
               {t.silentGenerator.description}
             </p>
             <button className="bg-primaryOrange text-primaryDarkBlue rounded-lg hover:bg-primaryDarkBlue hover:text-white flex items-center gap-2 p-4">

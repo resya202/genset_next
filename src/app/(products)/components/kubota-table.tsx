@@ -7,12 +7,12 @@ const KubotaTable = () => {
   return (
     <div className="p-4 text-black">
       <div className="flex justify-between items-center my-4">
-        <h1 className="text-2xl font-bold mb-4">KUBOTA Products</h1>
+        <h1 className="text-xl md:text-2xl font-bold mb-4">KUBOTA Products</h1>
         <Link
           href="/PDF/kubota_list.pdf"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-primaryOrange p-4 text-black font-semibold hover:bg-primaryDarkBlue hover:text-white rounded-lg"
+          className="bg-primaryOrange text-xs py-4 px-2 text-black font-semibold hover:bg-primaryDarkBlue hover:text-white rounded-lg"
         >
           Download Pamflet
         </Link>
