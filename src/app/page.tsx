@@ -26,7 +26,6 @@ const ProductList = dynamic(() => import("./components/productList"), {
   loading: () => <div>Loading Product List...</div>,
 });
 
-
 export default function Home() {
   return (
     <div className="font-sans antialiased">
