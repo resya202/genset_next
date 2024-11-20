@@ -4,9 +4,8 @@ import prisma from "@/app/utils/prisma";
 
 export async function POST(req: Request) {
   try {
-    console.log("masuk kontol");
+    console.log("masuk kontol", req.body);
 
-    console.log(prisma, "<This is prisma ")
     const today = new Date();
     today.setHours(0, 0, 0, 0);
 
