@@ -48,7 +48,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="flex flex-col md:flex-row gap-6 max-w-[1200px] mx-auto mt-4">
+    <div className="flex flex-col md:flex-row gap-6 mx-auto mt-4">
       {/* Form Section */}
       <div className="w-full">
         <form onSubmit={handleSubmit} className="space-y-4">
@@ -97,7 +97,7 @@ const ContactForm = () => {
           />
           <button
             type="submit"
-            className="w-full bg-blue-500 text-white py-2 px-4 rounded hover:bg-primaryDarkBlue"
+            className="w-full bg-primaryDarkBlue text-white py-2 px-4 rounded hover:bg-primaryDarkBlue-900 "
           >
             Submit
           </button>

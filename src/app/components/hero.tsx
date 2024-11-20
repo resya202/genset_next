@@ -41,8 +41,8 @@ export default function Hero() {
 
   return (
     <section ref={componentRef}>
-      <div className="flex flex-col md:flex-row items-center px-4 md:px-10 py-12 shadow-md my-20 rounded-md max-w-[1480px] mx-auto bg-white ">
-        <div className="left-section md:w-1/2 text-center md:text-left">
+      <div className="flex flex-col lg:flex-row items-center px-4 lg:px-10 py-12 shadow-md my-20 rounded-md max-w-[1480px] mx-auto bg-white ">
+        <div className="left-section lg:w-1/2 text-center lg:text-left">
           <h1 className="text-4xl font-bold text-gray-900">
             {t.heading.split(" ").map((word, i) =>
               word === "journey" || word === "perjalanan" ? (
@@ -56,15 +56,15 @@ export default function Hero() {
           </h1>
           <p className="mt-4 text-gray-600">{t.description}</p>
           <div className="mt-6 flex flex-col md:flex-row justify-center lg:justify-start gap-4">
-            <button className="px-6 py-3 bg-primaryBlack text-white rounded-lg hover:bg-primaryOrange hover:text-black font-semibold">
+            <button className="px-6 py-3 md:w-56 bg-primaryBlack text-white rounded-lg hover:bg-primaryOrange hover:text-black font-semibold">
               {t.bookingButton}
             </button>
-            <button className="px-6 py-3 text-black bg-primaryOrange rounded-lg hover:text-white">
+            <button className="px-6 py-3 md:w-56 text-black bg-primaryOrange rounded-lg hover:text-white">
               {t.downloadButton}
             </button>
           </div>
 
-          <section className="w-full md:w-[95%] flex justify-between items-center py-4 bg-gray-50 mt-10 rounded-lg text-lg md:text-3xl">
+          <section className="w-full lg:w-[95%] flex justify-between items-center py-4 bg-gray-50 mt-10 rounded-lg text-lg lg:text-3xl">
             <div className="text-center border-r pr-2 w-1/3">
               <h3 className="font-bold text-primaryOrange">5+ Years</h3>
               <p className="text-xs text-gray-600">
@@ -86,7 +86,7 @@ export default function Hero() {
           </section>
         </div>
 
-        <div className="right-section w-full lg:w-1/2 mt-8 lg:mt-0 relative flex justify-center items-center flex-col md:flex-row gap-8">
+        <div className="right-section w-full lg:w-1/2 mt-8 lg:mt-0 relative flex justify-center items-center flex-col lg:flex-row gap-8">
           <div className="relative w-full h-[15rem] lg:h-[500px] rounded-lg overflow-hidden shadow-md">
             <Image
               src="/genset/IMG_7822.webp"
@@ -97,8 +97,8 @@ export default function Hero() {
             />
           </div>
 
-          <div className="md:absolute w-full md:w-[24rem] md:h-[15rem] bottom-0 left-0 bg-white flex items-end justify-start rounded-tr-lg rounded-bl-lg rounded-br-lg">
-            <div className="w-full h-full md:w-[95%] md:h-[93%] rounded-lg overflow-hidden shadow-lg">
+          <div className="lg:absolute w-full lg:w-[24rem] lg:h-[15rem] bottom-0 left-0 bg-white flex items-end justify-start rounded-tr-lg rounded-bl-lg rounded-br-lg">
+            <div className="w-full h-full lg:w-[95%] lg:h-[93%] rounded-lg overflow-hidden shadow-lg">
               <Image
                 src="/genset/IMG_7776.webp"
                 alt={language === "en" ? "Woman" : "Wanita"}

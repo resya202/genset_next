@@ -61,7 +61,7 @@ export default function FAQ() {
           </h2>
           <div
             ref={faqRef}
-            className={`grid grid-cols-1 md:grid-cols-2 gap-6 transition-transform duration-700 ${
+            className={`grid grid-cols-1 lg:grid-cols-2 gap-6 transition-transform duration-700 ${
               isFAQVisible
                 ? "translate-y-0 opacity-100"
                 : "translate-y-20 opacity-0"
@@ -70,7 +70,7 @@ export default function FAQ() {
             {t.faqs.map((faq, index) => (
               <div
                 key={index}
-                className={`bg-white p-6 rounded-lg shadow-md hover:shadow-lg hover:shadow-primaryDarkBlue transition-shadow`}
+                className={`bg-white text-justify p-6 rounded-lg shadow-md hover:shadow-lg hover:shadow-primaryDarkBlue transition-shadow`}
               >
                 <h3 className="text-lg font-semibold text-gray-800 flex items-center gap-2">
                   <span className="w-8 h-8 flex items-center justify-center bg-primaryBlack text-white rounded-full">
@@ -102,7 +102,7 @@ export default function FAQ() {
         {/* Image Section */}
         <div
           ref={imageRef}
-          className={`hidden lg:w-1/3 md:flex justify-center items-center transition-transform duration-700 ${
+          className={`hidden lg:w-1/3 lg:flex justify-center items-center transition-transform duration-700 ${
             isImageVisible
               ? "translate-x-0 opacity-100"
               : "translate-x-20 opacity-0"
