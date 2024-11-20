@@ -8,7 +8,7 @@ const FeaturesSection = () => {
   const { title, description, features } = featuresTranslations[language];
 
   return (
-    <section className="max-w-7xl mx-auto py-12 px-6 text-center">
+    <section className="max-w-7xl mx-auto py-12 px-4 md:px-6 text-center">
       {/* Title and Description */}
       <h2 className="text-3xl font-bold mb-4">{title}</h2>
       <p className="text-gray-600 mb-10">{description}</p>

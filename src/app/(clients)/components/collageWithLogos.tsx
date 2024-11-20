@@ -9,7 +9,7 @@ const CollageWithLogos = () => {
   const { language } = useLanguage();
 
   return (
-    <section className="max-w-7xl mx-auto py-10 px-4">
+    <section className="w-full lg:max-w-7xl mx-auto py-10 px-4">
       <h2 className="text-3xl font-bold text-center mb-6">
         We&apos;re many brilliant minds, collaborating on the same platform
       </h2>
@@ -26,11 +26,10 @@ const CollageWithLogos = () => {
           return (
             <div
               key={index}
-              className="grid grid-cols-5 gap-4 items-center justify-center"
+              className="lg:grid lg:grid-cols-5 gap-4 items-center justify-center relative shadow-md lg:shadow-primaryOrange border rounded-lg lg:border-none p-4 "
             >
-              {/* Left two images */}
-              <div className="grid grid-rows-2 gap-4">
-                <div className="relative w-full h-40 border">
+              <div className="grid grid-cols-2 lg:grid-cols-1 lg:grid-rows-2 gap-2 lg:gap-4 pt-32 lg:pt-0">
+                <div className="relative w-full h-40 mb-8 lg:mb-0">
                   <Image
                     src={images[0]}
                     alt={`Collage Image ${index}-1`}
@@ -38,7 +37,7 @@ const CollageWithLogos = () => {
                     className="object-cover rounded-lg"
                   />
                 </div>
-                <div className="relative w-full h-40 border">
+                <div className="relative w-full h-40">
                   <Image
                     src={images[1]}
                     alt={`Collage Image ${index}-2`}
@@ -48,8 +47,7 @@ const CollageWithLogos = () => {
                 </div>
               </div>
 
-              {/* Main large image */}
-              <div className="relative w-[30rem] h-96 col-span-2">
+              <div className="relative w-62 lg:w-[24rem] 2xl:w-[30rem] h-80 col-span-2">
                 <Image
                   src={images[2]}
                   alt={`Collage Image ${index}-3`}
@@ -58,9 +56,8 @@ const CollageWithLogos = () => {
                 />
               </div>
 
-              {/* Right-side text */}
-              <div className="col-span-2 flex flex-col justify-center items-center">
-                <div className="flex w-28 h-28 relative bg-white rounded-full overflow-hidden border mb-4">
+              <div className="w-full mt-8 text-justify px-4 lg:px-0 lg:mt-0 col-span-2 flex flex-col justify-center items-center">
+                <div className="absolute top-2 flex w-28 h-28 lg:relative bg-white rounded-full overflow-hidden border mb-4">
                   <Image
                     src={images[3]}
                     alt={`Logo ${index + 1}`}
