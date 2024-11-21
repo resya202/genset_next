@@ -2,6 +2,10 @@ import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 import { google } from "googleapis";
 import dns from "dns";
+import { PrismaClient } from '@prisma/client';
+
+const prisma = new PrismaClient();
+
 const validateEmail = (email: string): boolean => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
@@ -46,6 +50,17 @@ export async function POST(req: Request) {
             );
         }
 
+        // Save the contact details to Prisma `Clients` model
+        const newClient = await prisma.clients.create({
+            data: {
+                cln_full_name: fullName,
+                cln_email: email,
+                cln_contact_number: contactNumber || null,
+                cln_subject: subject || null,
+                message: message,
+            },
+        });
+
         // Set up OAuth2 client
         const oAuth2Client = new google.auth.OAuth2(
             process.env.GOOGLE_CLIENT_ID,
@@ -89,7 +104,7 @@ export async function POST(req: Request) {
         await transporter.sendMail(mailOptions);
 
         return NextResponse.json(
-            { message: "Email sent successfully!" },
+            { message: "Email sent successfully!", clientId: newClient.id },
             { status: 200 }
         );
     } catch (error) {
