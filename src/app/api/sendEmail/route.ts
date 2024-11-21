@@ -2,9 +2,7 @@ import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 import { google } from "googleapis";
 import dns from "dns";
-import { PrismaClient } from '@prisma/client';
-
-const prisma = new PrismaClient();
+import prisma from "@/app/utils/prisma";
 
 const validateEmail = (email: string): boolean => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;

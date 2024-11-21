@@ -1,5 +1,5 @@
-# Use the official Node.js 20 image as the base
-FROM node:20
+# Use the official Node.js 20 image as the build stage
+FROM node:20 AS builder
 
 # Set the working directory in the container
 WORKDIR /app
@@ -7,22 +7,23 @@ WORKDIR /app
 # Copy package.json and package-lock.json
 COPY package*.json ./
 
+# Generate Prisma client during build (in a build stage if using multi-stage builds)
+RUN npx prisma db pull && npx prisma generate
+
 # Install dependencies
 RUN npm install
 
 # Copy the rest of the application files
 COPY . .
 
-COPY entrypoint.sh /app/entrypoint.sh
-
-# Make the entrypoint script executable
-RUN chmod +x /app/entrypoint.sh
-
-# Set the entrypoint
-ENTRYPOINT ["/app/entrypoint.sh"]
-
 # Build the Next.js app
 RUN npm run build
+
+# Use the official Node.js 20 image as the runtime stage
+FROM node:20
+
+# Set the working directory in the container
+WORKDIR /app
 
 # Expose the application port (default for Next.js is 3000)
 EXPOSE 3990
