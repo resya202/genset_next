@@ -13,6 +13,14 @@ RUN npm install
 # Copy the rest of the application files
 COPY . .
 
+COPY entrypoint.sh /app/entrypoint.sh
+
+# Make the entrypoint script executable
+RUN chmod +x /app/entrypoint.sh
+
+# Set the entrypoint
+ENTRYPOINT ["/app/entrypoint.sh"]
+
 # Build the Next.js app
 RUN npm run build
 
