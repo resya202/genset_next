@@ -11,7 +11,7 @@ export default function ClientsPage() {
         translationObject={clientCoverImage}
       />
 
-      <div className="min-h-screen text-black max-w-[1480px] bg-white shadow-md mx-auto my-10 rounded-lg pt-10 px-10">
+      <div className="text-black max-w-[1480px] bg-white mx-auto my-10 rounded-lg pt-10 md:px-10 overflow-x-hidden">
         <CollageWithLogos />
       </div>
     </section>

@@ -1,0 +1,25 @@
+generator client {
+  provider      = "prisma-client-js"
+  output        = "../generated/core-client"
+  binaryTargets = ["native", "linux-arm64-openssl-3.0.x"]
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model Clients {
+  id                 Int     @id @default(autoincrement())
+  cln_full_name      String? @db.VarChar(100)
+  cln_email          String? @db.VarChar(100)
+  cln_contact_number String? @db.VarChar(100)
+  cln_subject        String? @db.VarChar(100)
+  message            String? @db.VarChar(100)
+}
+
+model Whatsapp {
+  id         Int      @id @default(autoincrement())
+  wa_counter Int      @default(0)
+  wa_date    DateTime @unique
+}

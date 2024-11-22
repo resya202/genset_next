@@ -10,7 +10,7 @@ export default function AchievementStory() {
   const t = achievementTranslations[language] || achievementTranslations["en"];
 
   return (
-    <section className="py-12 px-6 bg-white rounded-lg my-10">
+    <section className="py-12 px-6 shadow-md border rounded-lg my-10">
       <div className="mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
         {/* Left Section */}
         <div className="space-y-6">

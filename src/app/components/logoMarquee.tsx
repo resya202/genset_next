@@ -25,7 +25,7 @@ const LogoMarquee: React.FC<LogoMarqueeProps> = ({ title }) => {
       {[...logos, ...logos].map((logo, index) => (
         <div
           key={`${rowKey}-${index}`}
-          className="flex-shrink-0 w-24 h-24 relative bg-white rounded-full overflow-hidden"
+          className="flex-shrink-0 size-16 md:size-24 relative bg-white rounded-full overflow-hidden"
         >
           <Image
             src={logo}
@@ -39,7 +39,7 @@ const LogoMarquee: React.FC<LogoMarqueeProps> = ({ title }) => {
   );
 
   return (
-    <div className="overflow-hidden bg-white py-10 rounded-lg mt-20">
+    <div className="overflow-hidden bg-white py-10 rounded-lg mt-20 shadow-md border">
       <h2 className="text-center text-xl text-primaryDarkBlue font-bold mb-6">
         {title}
       </h2>

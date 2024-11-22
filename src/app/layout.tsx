@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import Script from "next/script";
+// import Script from "next/script";
 import "./globals.css";
 import { LanguageProvider } from "./context/languageContext";
 import LayoutWrapper from "./provider/layoutWrapper";
@@ -29,10 +29,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link
+        {/* <link
           href="https://cdn.jsdelivr.net/npm/pagedone@1.2.2/src/css/pagedone.css"
           rel="stylesheet"
-        />
+        /> */}
         <title>BPN | Perusahaan Mesin Genset Indonesia</title>
         <meta
           name="description"
@@ -56,18 +56,19 @@ export default function RootLayout({
           href="favicon-16x16.png"
         />
         <link rel="manifest" href="site.webmanifest" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
 
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-100 scrollbar-none`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white scrollbar-none`}
       >
         <LanguageProvider>
           <LayoutWrapper>{children}</LayoutWrapper>
         </LanguageProvider>
-        <Script
+        {/* <Script
           src="https://cdn.jsdelivr.net/npm/pagedone@1.2.2/src/js/pagedone.js"
           strategy="afterInteractive"
-        />
+        /> */}
       </body>
     </html>
   );

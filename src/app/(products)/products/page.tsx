@@ -12,7 +12,7 @@ export default function Products() {
         imageSrc="/FAQ/IMG_7299.webp"
         translationObject={clientCoverImage}
       />
-      <div className="my-10 max-w-[1480px] mx-auto p-6">
+      <div className="my-10 md:max-w-[1480px] md:mx-auto md:p-6">
         <NavTabs />
 
         <GensetTypes />
