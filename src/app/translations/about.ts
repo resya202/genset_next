@@ -10,65 +10,65 @@ export type CoverImageObjects = {
 export const aboutCoverImage: CoverImageObjects = {
     en: {
         title: "About Us",
-        description: "BPN Indonesia is a great company",
+        description: "PT. Berkat Power Nusantara Energi is a trusted provider of power solutions, specializing in high-quality generators for residential, industrial, and commercial applications. We also offer advanced ATS and Syncro Panels, along with comprehensive services including installation, maintenance, and repair. Backed by a team of experts, we ensure reliable energy solutions tailored to your needs.",
     },
     id: {
         title: "Tentang Kami",
-        description: "BPN Indonesia adalah perusahaan besar",
+        description: "PT. Berkat Power Nusantara Energi adalah penyedia solusi daya terpercaya yang mengkhususkan diri pada generator berkualitas tinggi untuk kebutuhan residensial, industri, dan komersial. Kami juga menyediakan panel ATS dan Syncro yang canggih serta layanan komprehensif seperti instalasi, perawatan, dan perbaikan. Didukung oleh tim ahli, kami memastikan solusi energi yang andal sesuai kebutuhan Anda.",
     },
 };
+
 
 
 
 export const achievementTranslations = {
     en: {
         sectionTitle: "About Us",
-        heading: "The Tale of Our Achievement Story",
-        description:
-            "Our achievement story is a testament to teamwork and perseverance. Together, we’ve overcome challenges, celebrated victories, and created a narrative of progress and success.",
+        heading: "Limitless Energy, Every Day, Every Night",
+        description: "PT. Berkat Power Nusantara Energi delivers reliable power solutions with a focus on quality, innovation, and customer satisfaction. From high-capacity generators to end-to-end services, we are your trusted partner for energy needs.",
         stats: [
             {
-                title: "33+ Years",
-                description: "Influencing Digital Landscapes Together",
+                title: "15–2000 kVA",
+                description: "Comprehensive stock of generators ready for delivery.",
             },
             {
-                title: "125+ Projects",
-                description: "Excellence Achieved Through Success",
+                title: "BSD Green Office Park",
+                description: "Strategically located in Tangerang to serve clients nationwide.",
             },
             {
-                title: "26+ Awards",
-                description: "Our Dedication to Innovation Wins Understanding",
+                title: "One-Stop Solution",
+                description: "From sales to maintenance, ensuring seamless operations.",
             },
             {
-                title: "99% Happy Clients",
-                description: "Mirrors our Focus on Client Satisfaction",
+                title: "Experienced Team",
+                description: "Professionals with proven expertise across diverse industries.",
             },
         ],
         readMore: "Read More",
     },
     id: {
         sectionTitle: "Tentang Kami",
-        heading: "Kisah Keberhasilan Kami",
-        description:
-            "Kisah keberhasilan kami adalah bukti dari kerja tim dan ketekunan. Bersama-sama, kami telah mengatasi tantangan, merayakan kemenangan, dan menciptakan cerita tentang kemajuan dan keberhasilan.",
+        heading: "Energi Tanpa Batas, Setiap Hari, Setiap Malam",
+        description: "PT. Berkat Power Nusantara Energi menyediakan solusi daya yang andal dengan fokus pada kualitas, inovasi, dan kepuasan pelanggan. Dari generator berkapasitas besar hingga layanan menyeluruh, kami adalah mitra terpercaya untuk kebutuhan energi Anda.",
         stats: [
             {
-                title: "33+ Tahun",
-                description: "Memengaruhi Lanskap Digital Bersama",
+                title: "15–2000 kVA",
+                description: "Stok lengkap generator siap kirim.",
             },
             {
-                title: "125+ Proyek",
-                description: "Keberhasilan yang Dicapai Melalui Kesempurnaan",
+                title: "BSD Green Office Park",
+                description: "Berlokasi strategis di Tangerang untuk melayani pelanggan di seluruh Indonesia.",
             },
             {
-                title: "26+ Penghargaan",
-                description: "Dedikasi Kami untuk Inovasi Mendapatkan Pengakuan",
+                title: "Solusi Satu Pintu",
+                description: "Dari penjualan hingga perawatan, memastikan operasi tanpa gangguan.",
             },
             {
-                title: "99% Klien Bahagia",
-                description: "Mencerminkan Fokus Kami pada Kepuasan Klien",
+                title: "Tim Berpengalaman",
+                description: "Profesional dengan keahlian terbukti di berbagai industri.",
             },
         ],
         readMore: "Baca Selengkapnya",
     },
 };
+

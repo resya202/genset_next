@@ -13,29 +13,31 @@ export const headerTranslations: Record<SupportedLanguages, {
     en: {
         home: "Home",
         aboutUs: "About Us",
-        products: "Products",
-        bookNow: "Book Now",
-        clients: "Clients",
-        services: "Services",
+        products: "Our Products",
+        bookNow: "Get a Quote",
+        clients: "Our Clients",
+        services: "Services & Support",
     },
     id: {
         home: "Beranda",
         aboutUs: "Tentang Kami",
-        products: "Produk",
-        bookNow: "Pesan Sekarang",
-        clients: "Klien",
-        services: "Servis",
+        products: "Produk Kami",
+        bookNow: "Dapatkan Penawaran",
+        clients: "Klien Kami",
+        services: "Layanan & Dukungan",
     },
 };
 
 export const homeCoverImage: CoverImageObjects = {
     en: {
-        title: "Home Page",
-        description: "BPN Indonesia is a great company",
+        title: "Powering Your Needs",
+        description:
+            "PT. Berkat Power Nusantara Energi provides high-quality generators and reliable energy solutions for residential, industrial, and commercial projects across Indonesia.",
     },
     id: {
-        title: "Halaman Utama",
-        description: "BPN Indonesia adalah perusahaan besar",
+        title: "Mendukung Kebutuhan Anda",
+        description:
+            "PT. Berkat Power Nusantara Energi menyediakan generator berkualitas tinggi dan solusi energi yang andal untuk proyek residensial, industri, dan komersial di seluruh Indonesia.",
     },
 };
 
@@ -43,27 +45,27 @@ export const homeCoverImage: CoverImageObjects = {
 // translations/home.ts
 export const heroTranslations = {
     en: {
-        heading: "We make your Flight journey as easy as possible",
+        heading: "Providing Reliable Power Solutions for Every Project",
         description:
-            "Embarking on a flight journey can be an exhilarating experience, filled with anticipation for the adventures ahead. To ensure a smooth and enjoyable trip, it's important to prepare adequately.",
-        bookingButton: "Book Now",
-        downloadButton: "See Product Catalogs",
+            "PT. Berkat Power Nusantara Energi is your trusted partner in delivering high-quality generators, ATS & Syncro Panels, and maintenance services to ensure uninterrupted energy for your operations.",
+        bookingButton: "Get a Quote",
+        downloadButton: "View Product Catalog",
         statistics: {
-            yearsOperated: "Years Operated",
-            satisfiedBuyers: "Satisfied Buyers",
-            satisfiedRate: "Satisfied Rate",
+            yearsOperated: "Years in Operation",
+            satisfiedBuyers: "Satisfied Clients",
+            satisfiedRate: "Customer Satisfaction Rate",
         },
     },
     id: {
-        heading: "Kami membuat perjalanan penerbangan Anda semudah mungkin",
+        heading: "Menyediakan Solusi Daya Andal untuk Setiap Proyek",
         description:
-            "Memulai perjalanan penerbangan bisa menjadi pengalaman yang mendebarkan, penuh dengan antisipasi untuk petualangan yang akan datang. Untuk memastikan perjalanan yang lancar dan menyenangkan, penting untuk mempersiapkan dengan baik.",
-        bookingButton: "Pesan Sekarang",
-        downloadButton: "Lihat Catalog",
+            "PT. Berkat Power Nusantara Energi adalah mitra terpercaya Anda dalam menyediakan generator berkualitas tinggi, panel ATS & Syncro, serta layanan perawatan untuk memastikan energi tanpa gangguan.",
+        bookingButton: "Dapatkan Penawaran",
+        downloadButton: "Lihat Katalog Produk",
         statistics: {
             yearsOperated: "Tahun Beroperasi",
-            satisfiedBuyers: "Pembeli Puas",
-            satisfiedRate: "Tingkat Kepuasan",
+            satisfiedBuyers: "Klien Puas",
+            satisfiedRate: "Tingkat Kepuasan Pelanggan",
         },
     },
 };
@@ -71,50 +73,61 @@ export const heroTranslations = {
 // translations/features.ts
 export const featuresTranslations = {
     en: {
-        heading: "Explore the Features of Our Platform",
+        heading: "Why Choose Us?",
         description:
-            "Learn more about what makes us stand out and how we bring value to your business.",
+            "Discover what sets PT. Berkat Power Nusantara Energi apart and how we deliver value through our trusted solutions.",
         features: [
             {
-                title: "Who Are We?",
+                title: "Trusted Expertise",
                 content:
-                    "We are a team of passionate professionals dedicated to delivering innovative solutions and exceptional services to our customers worldwide.",
+                    "Backed by years of experience in the generator and electrical industries, we provide reliable and effective energy solutions for every project.",
             },
             {
-                title: "What Do We Sell?",
+                title: "Responsive Support",
                 content:
-                    "We specialize in offering a wide range of high-quality products and services designed to meet the needs of modern businesses and individuals.",
+                    "Our team offers fast and responsive customer service to assist with technical needs anytime.",
             },
             {
-                title: "Where to Find Us?",
+                title: "Customized Solutions",
                 content:
-                    "Our headquarters are located in the heart of the city, with multiple branches worldwide to serve our global customer base.",
+                    "We tailor our solutions to your needs, from generator selection to panel configuration, ensuring optimal performance.",
+            },
+            {
+                title: "After-Sales Service",
+                content:
+                    "We provide warranties and ongoing maintenance services to ensure long-term satisfaction and reliability.",
             },
         ],
     },
     id: {
-        heading: "Jelajahi Fitur Platform Kami",
+        heading: "Mengapa Memilih Kami?",
         description:
-            "Pelajari lebih lanjut tentang apa yang membuat kami menonjol dan bagaimana kami membawa nilai bagi bisnis Anda.",
+            "Temukan apa yang membuat PT. Berkat Power Nusantara Energi berbeda dan bagaimana kami memberikan nilai melalui solusi terpercaya.",
         features: [
             {
-                title: "Siapa Kami?",
+                title: "Keahlian Terpercaya",
                 content:
-                    "Kami adalah tim profesional yang bersemangat, berdedikasi untuk memberikan solusi inovatif dan layanan luar biasa kepada pelanggan kami di seluruh dunia.",
+                    "Didukung pengalaman bertahun-tahun di industri generator dan kelistrikan, kami menyediakan solusi energi yang andal dan efektif untuk setiap proyek.",
             },
             {
-                title: "Apa yang Kami Jual?",
+                title: "Dukungan Responsif",
                 content:
-                    "Kami mengkhususkan diri dalam menawarkan berbagai produk dan layanan berkualitas tinggi yang dirancang untuk memenuhi kebutuhan bisnis dan individu modern.",
+                    "Tim kami menawarkan layanan pelanggan yang cepat dan responsif untuk memenuhi kebutuhan teknis kapan saja.",
             },
             {
-                title: "Di Mana Kami Berada?",
+                title: "Solusi yang Disesuaikan",
                 content:
-                    "Kantor pusat kami terletak di jantung kota, dengan banyak cabang di seluruh dunia untuk melayani basis pelanggan global kami.",
+                    "Kami menyesuaikan solusi kami dengan kebutuhan Anda, mulai dari pemilihan generator hingga konfigurasi panel, memastikan kinerja optimal.",
+            },
+            {
+                title: "Layanan Purna Jual",
+                content:
+                    "Kami menyediakan garansi dan layanan perawatan berkelanjutan untuk memastikan kepuasan dan keandalan jangka panjang.",
             },
         ],
     },
 };
+
 
 // translations/faq.ts
 export const faqTranslations = {
@@ -176,118 +189,83 @@ export const faqTranslations = {
 
 export const productTranslations = {
     en: {
-        generatorHeading: "Find and order the best generator for your needs",
-        catalogButton: "Product Catalog",
-        orderButton: "Order Now",
-        startFrom: "Start from",
+        generatorHeading: "Explore the Best Generators for Your Energy Needs",
+        catalogButton: "View Catalog",
+        orderButton: "Get a Quote",
+        startFrom: "Starting from",
         joinHeading:
-            "Talk to our sales team for accurate information or send your request via email.",
-        emailPrompt: "Send an email now",
+            "Talk to our expert team for accurate information or send your inquiries via email.",
+        emailPrompt: "Contact us via email",
         emailPlaceholder: "Enter your email",
         submitButton: "Submit",
     },
     id: {
-        generatorHeading:
-            "Cari dan pesan mesin generator yang paling cocok untuk kebutuhanmu",
-        catalogButton: "Katalog Produk",
-        orderButton: "Pesan Sekarang",
+        generatorHeading: "Jelajahi Generator Terbaik untuk Kebutuhan Energi Anda",
+        catalogButton: "Lihat Katalog",
+        orderButton: "Dapatkan Penawaran",
         startFrom: "Mulai dari",
         joinHeading:
-            "Berbicara dengan sales kami untuk mendapatkan info paling akurat, atau bisa kirimkan permintaanmu melalui email.",
-        emailPrompt: "Kirimkan email sekarang",
-        emailPlaceholder: "Masukan Email",
+            "Hubungi tim ahli kami untuk mendapatkan informasi yang akurat atau kirimkan pertanyaan Anda melalui email.",
+        emailPrompt: "Hubungi kami melalui email",
+        emailPlaceholder: "Masukkan email Anda",
         submitButton: "Kirim",
     },
 };
 
+
 export const testimonialsTranslations = {
     en: {
-        title: "Clients' Feedback on Our Work",
+        title: "What Our Clients Say About Us",
         subtitle:
-            "Explore the experiences of our clients with our work, showing our dedication to delivering exceptional results.",
+            "Hear from our satisfied clients about how our solutions helped them achieve their goals.",
         reviews: [
             {
                 id: 1,
                 src: "/features/IMG_7124.webp",
-                name: "Christopher Adams",
-                from: "New York, USA",
-                companyName: "Project Manager at Company A",
+                name: "PT. Bakrie Autoparts",
+                from: "Indonesia",
+                companyName: "Client",
                 testimonial:
-                    "They consistently deliver exceptional quality services right on schedule, ensuring our projects proceed smoothly and efficiently.",
+                    "PT. Berkat Power Nusantara Energi provided excellent service during the installation of our 250kVA generator. The team was professional and efficient.",
             },
             {
                 id: 2,
-                src: "/FAQ/IMG_7299.webp",
-                name: "Sophia Martinez",
-                from: "London, UK",
-                companyName: "CTO at Company B",
-                testimonial:
-                    "Their commitment to timeliness and excellence sets them apart in our industry, making them our trusted partner.",
-            },
-            {
-                id: 3,
                 src: "/features/IMG_7124.webp",
-                name: "James Williams",
-                from: "Sydney, Australia",
-                companyName: "CEO at Company C",
+                name: "PT. Wima Jaya Artek",
+                from: "Indonesia",
+                companyName: "Client",
                 testimonial:
-                    "The team’s expertise and dedication are unmatched. They helped us achieve our project goals seamlessly.",
-            },
-            {
-                id: 4,
-                src: "/features/IMG_7124.webp",
-                name: "Olivia Brown",
-                from: "Toronto, Canada",
-                companyName: "Operations Manager at Company D",
-                testimonial:
-                    "I highly recommend their services for their outstanding support and innovation. They truly understand our needs.",
+                    "From purchasing to commissioning, the team ensured our 1000kVA generator operated flawlessly. Highly recommended.",
             },
         ],
     },
     id: {
-        title: "Ulasan Klien Tentang Pekerjaan Kami",
+        title: "Apa Kata Klien Kami Tentang Kami",
         subtitle:
-            "Jelajahi pengalaman klien kami dengan pekerjaan kami, menunjukkan dedikasi kami untuk memberikan hasil yang luar biasa.",
+            "Dengarkan dari klien kami yang puas tentang bagaimana solusi kami membantu mereka mencapai tujuan mereka.",
         reviews: [
             {
                 id: 1,
                 src: "/features/IMG_7124.webp",
-                name: "Christopher Adams",
-                from: "New York, AS",
-                companyName: "Manajer Proyek di Perusahaan A",
+                name: "PT. Bakrie Autoparts",
+                from: "Indonesia",
+                companyName: "Klien",
                 testimonial:
-                    "Mereka selalu memberikan layanan berkualitas luar biasa tepat waktu, memastikan proyek kami berjalan lancar dan efisien.",
+                    "PT. Berkat Power Nusantara Energi memberikan layanan luar biasa selama instalasi generator 250kVA kami. Timnya profesional dan efisien.",
             },
             {
                 id: 2,
-                src: "/FAQ/IMG_7299.webp",
-                name: "Sophia Martinez",
-                from: "London, Inggris",
-                companyName: "CTO di Perusahaan B",
-                testimonial:
-                    "Komitmen mereka terhadap ketepatan waktu dan keunggulan menjadikan mereka mitra terpercaya di industri kami.",
-            },
-            {
-                id: 3,
                 src: "/features/IMG_7124.webp",
-                name: "James Williams",
-                from: "Sydney, Australia",
-                companyName: "CEO di Perusahaan C",
+                name: "PT. Wima Jaya Artek",
+                from: "Indonesia",
+                companyName: "Klien",
                 testimonial:
-                    "Keahlian dan dedikasi tim mereka sangat luar biasa. Mereka membantu kami mencapai tujuan proyek kami dengan mulus.",
-            },
-            {
-                id: 4,
-                src: "/features/IMG_7124.webp",
-                name: "Olivia Brown",
-                from: "Toronto, Kanada",
-                companyName: "Manajer Operasional di Perusahaan D",
-                testimonial:
-                    "Saya sangat merekomendasikan layanan mereka untuk dukungan dan inovasi yang luar biasa. Mereka benar-benar memahami kebutuhan kami.",
+                    "Dari pembelian hingga commissioning, tim memastikan generator 1000kVA kami beroperasi dengan sempurna. Sangat direkomendasikan.",
             },
         ],
     },
 };
+
 
 export const footerTranslations = {
     en: {

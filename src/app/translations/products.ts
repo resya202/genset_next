@@ -1,32 +1,63 @@
+import { CoverImageObjects } from "./about";
+
+export const productCoverImage: CoverImageObjects = {
+    en: {
+        title: "Our Products",
+        description:
+            "PT. Berkat Power Nusantara Energi offers a wide range of high-quality generator products designed for industrial, commercial, and residential needs. Partnering with industry leaders, we deliver reliable and customized energy solutions to meet your specific requirements.",
+    },
+    id: {
+        title: "Produk Kami",
+        description:
+            "PT. Berkat Power Nusantara Energi menawarkan berbagai produk genset berkualitas tinggi yang dirancang untuk kebutuhan industri, komersial, dan residensial. Bermitra dengan pemimpin industri, kami menghadirkan solusi energi yang andal dan disesuaikan dengan kebutuhan Anda.",
+    },
+};
+
+
+
+
+
 export const translationObject = {
     en: {
-        title: "Our Main Generator Type",
+        title: "Our Key Generator Types",
         openGenerator: {
-            title: "Open Generator Type",
+            title: "Open Type Generator",
             description:
-                "The open generator type is a versatile option designed for industrial and outdoor use. It provides efficient power solutions, easy accessibility for maintenance, and rugged durability in harsh environments.",
-            buttonText: "Call our sales team",
+                "Built for industrial and outdoor use, the open type generator provides reliable, high-capacity power with easy access for maintenance. It is ideal for applications requiring rugged performance in demanding environments.",
+            buttonText: "Talk to Our Sales Team",
         },
         silentGenerator: {
-            title: "Silent Generator Type",
+            title: "Silent Type Generator",
             description:
-                "The silent generator type offers reliable power while operating at low noise levels. It is perfect for residential and commercial applications where minimizing sound pollution is a priority.",
-            buttonText: "Call our sales team",
+                "Perfect for noise-sensitive areas, the silent type generator offers dependable power with minimal sound. It’s the go-to choice for residential and commercial applications requiring quiet yet efficient operations.",
+            buttonText: "Talk to Our Sales Team",
+        },
+        portableGenerator: {
+            title: "Portable Generator",
+            description:
+                "Compact and lightweight, the portable generator is ideal for temporary power needs, such as outdoor events, construction sites, or backup during emergencies. Designed for easy transport and quick setup.",
+            buttonText: "Learn More",
         },
     },
     id: {
-        title: "Tipe Utama Generator Kami",
+        title: "Jenis Utama Generator Kami",
         openGenerator: {
-            title: "Tipe Generator Terbuka",
+            title: "Generator Tipe Terbuka",
             description:
-                "Tipe generator terbuka adalah opsi serbaguna yang dirancang untuk penggunaan industri dan luar ruangan. Memberikan solusi daya yang efisien, akses mudah untuk perawatan, dan daya tahan di lingkungan yang keras.",
-            buttonText: "Hubungi tim penjualan kami",
+                "Dirancang untuk penggunaan industri dan luar ruangan, generator tipe terbuka menyediakan daya berkapasitas tinggi yang andal dengan akses perawatan yang mudah. Cocok untuk aplikasi yang membutuhkan kinerja tangguh di lingkungan yang menantang.",
+            buttonText: "Hubungi Tim Penjualan Kami",
         },
         silentGenerator: {
-            title: "Tipe Generator Hening",
+            title: "Generator Tipe Hening",
             description:
-                "Tipe generator hening menawarkan daya yang andal dengan tingkat kebisingan rendah. Sangat cocok untuk aplikasi residensial dan komersial di mana mengurangi polusi suara menjadi prioritas.",
-            buttonText: "Hubungi tim penjualan kami",
+                "Sangat cocok untuk area sensitif terhadap kebisingan, generator tipe hening menawarkan daya andal dengan suara yang minimal. Pilihan tepat untuk aplikasi residensial dan komersial yang memerlukan operasi yang tenang namun efisien.",
+            buttonText: "Hubungi Tim Penjualan Kami",
+        },
+        portableGenerator: {
+            title: "Generator Portabel",
+            description:
+                "Ringkas dan ringan, generator portabel ideal untuk kebutuhan daya sementara seperti acara luar ruangan, lokasi konstruksi, atau cadangan saat darurat. Dirancang untuk mudah dibawa dan pemasangan cepat.",
+            buttonText: "Pelajari Lebih Lanjut",
         },
     },
 };

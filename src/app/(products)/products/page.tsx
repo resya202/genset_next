@@ -1,6 +1,6 @@
 import React from "react";
 import CoverImage from "@/app/components/coverImage";
-import { clientCoverImage } from "@/app/translations/client";
+import { productCoverImage} from "@/app/translations/products";
 import NavTabs from "../components/navTabs";
 import LogoMarquee from "@/app/components/logoMarquee";
 import GensetTypes from "../components/GensetType";
@@ -10,7 +10,7 @@ export default function Products() {
     <section>
       <CoverImage
         imageSrc="/FAQ/IMG_7299.webp"
-        translationObject={clientCoverImage}
+        translationObject={productCoverImage}
       />
       <div className="my-10 md:max-w-[1480px] md:mx-auto md:p-6">
         <NavTabs />
