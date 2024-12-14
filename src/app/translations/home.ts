@@ -132,60 +132,61 @@ export const featuresTranslations = {
 // translations/faq.ts
 export const faqTranslations = {
     en: {
-        title: "Questions & Answers",
+        title: "Why Choose PT. Berkat Power Nusantara Energi?",
         faqs: [
             {
-                question: "How can I contact customer support?",
+                question: "What services does PT. Berkat Power Nusantara Energi offer?",
                 answer:
-                    "To contact customer support, look for a 'Contact us' or 'Help' button or link on the website or platform. You may be able to email, call, or chat with customer support for assistance.",
+                    "We provide a complete range of services, including generator set distribution, installation, spare parts supply, ATS & Syncro Panel manufacturing, and comprehensive maintenance solutions to ensure your power systems run efficiently and reliably.",
             },
             {
-                question: "How do I find my purchase history?",
+                question: "What types of generators do you offer?",
                 answer:
-                    "To find your purchase history, log in and go to the account or purchase history page. Look for a list of your past purchases or orders, and click on any item to see more details.",
+                    "We specialize in Open Type Generators for industrial and outdoor applications and Silent Type Generators for noise-sensitive environments. Our products are designed to deliver reliable power with tailored solutions for your unique needs.",
             },
             {
-                question: "How do I update my billing information?",
+                question: "Who are your clients?",
                 answer:
-                    "To update your billing information, log in and go to the billing or payment page. Look for an option to 'Update payment method' or 'Edit billing information' and follow the prompts. Be sure to save your changes before exiting.",
+                    "Our clients include industry leaders such as Yamaha, PLN, Bakrie Group, and Schneider Electric. We serve businesses across various sectors, from residential to industrial and commercial projects.",
             },
             {
-                question: "How do I upload a file or document?",
+                question: "Why is maintenance important for generators?",
                 answer:
-                    "To upload a file or document, look for a button or link that says 'Upload' or 'Add file.' Click on the button or link and follow the prompts to select the file from your computer or device. Be sure to check the file size and format requirements before uploading.",
+                    "Regular maintenance ensures optimal performance, extends the lifespan of your generator, and minimizes the risk of unexpected downtime, saving you time and costs in the long run.",
             },
         ],
-        contactPrompt: "Didn’t find the answer you were looking for?",
-        contactLink: "Contact Support",
+        contactPrompt: "Have more questions or need personalized solutions?",
+        contactLink: "Contact Our Sales Team",
     },
     id: {
-        title: "Pertanyaan & Jawaban",
+        title: "Mengapa Memilih PT. Berkat Power Nusantara Energi?",
         faqs: [
             {
-                question: "Bagaimana saya bisa menghubungi layanan pelanggan?",
+                question: "Layanan apa saja yang ditawarkan PT. Berkat Power Nusantara Energi?",
                 answer:
-                    "Untuk menghubungi layanan pelanggan, cari tombol atau tautan 'Hubungi kami' atau 'Bantuan' di situs web atau platform. Anda dapat menghubungi melalui email, telepon, atau obrolan.",
+                    "Kami menyediakan layanan lengkap, termasuk distribusi genset, instalasi, penyediaan suku cadang, pembuatan Panel ATS & Sinkronisasi, serta solusi perawatan menyeluruh untuk memastikan sistem daya Anda berjalan efisien dan andal.",
             },
             {
-                question: "Bagaimana saya menemukan riwayat pembelian saya?",
+                question: "Apa saja jenis genset yang Anda tawarkan?",
                 answer:
-                    "Untuk menemukan riwayat pembelian Anda, masuk dan buka halaman akun atau riwayat pembelian. Cari daftar pembelian atau pesanan Anda sebelumnya, lalu klik item apa pun untuk melihat detailnya.",
+                    "Kami mengkhususkan diri pada Generator Tipe Terbuka untuk aplikasi industri dan luar ruangan, serta Generator Tipe Hening untuk lingkungan sensitif terhadap kebisingan. Produk kami dirancang untuk memberikan daya andal dengan solusi yang disesuaikan dengan kebutuhan Anda.",
             },
             {
-                question: "Bagaimana cara memperbarui informasi tagihan saya?",
+                question: "Siapa saja klien Anda?",
                 answer:
-                    "Untuk memperbarui informasi tagihan Anda, masuk dan buka halaman pembayaran atau tagihan. Cari opsi 'Perbarui metode pembayaran' atau 'Edit informasi tagihan' dan ikuti petunjuknya. Jangan lupa untuk menyimpan perubahan Anda sebelum keluar.",
+                    "Klien kami termasuk pemimpin industri seperti Yamaha, PLN, Bakrie Group, dan Schneider Electric. Kami melayani bisnis di berbagai sektor, mulai dari proyek residensial hingga industri dan komersial.",
             },
             {
-                question: "Bagaimana cara mengunggah file atau dokumen?",
+                question: "Mengapa perawatan penting untuk genset?",
                 answer:
-                    "Untuk mengunggah file atau dokumen, cari tombol atau tautan yang bertuliskan 'Unggah' atau 'Tambahkan file'. Klik tombol atau tautan tersebut dan ikuti petunjuknya untuk memilih file dari komputer atau perangkat Anda. Pastikan ukuran dan format file sesuai dengan persyaratan.",
+                    "Perawatan rutin memastikan kinerja optimal, memperpanjang umur genset Anda, dan meminimalkan risiko downtime yang tidak terduga, sehingga menghemat waktu dan biaya dalam jangka panjang.",
             },
         ],
-        contactPrompt: "Tidak menemukan jawaban yang Anda cari?",
-        contactLink: "Hubungi Dukungan",
+        contactPrompt: "Punya pertanyaan lebih lanjut atau butuh solusi khusus?",
+        contactLink: "Hubungi Tim Penjualan Kami",
     },
 };
+
 
 export const productTranslations = {
     en: {
