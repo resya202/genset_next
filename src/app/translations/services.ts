@@ -3,54 +3,57 @@ import { CoverImageObjects } from "./about";
 export const servicesCoverImage: CoverImageObjects = {
     en: {
         title: "Our Services",
-        description: "We offer a wide range of services, ensuring quality and fulfilling our promises to clients.",
+        description:
+            "Delivering comprehensive and tailored solutions, we ensure the highest quality and reliability to meet your power needs.",
     },
     id: {
         title: "Layanan Kami",
-        description: "Kami menyediakan berbagai layanan, memastikan kualitas dan menepati janji kepada klien kami.",
+        description:
+            "Memberikan solusi yang menyeluruh dan sesuai kebutuhan, kami memastikan kualitas tertinggi dan keandalan untuk memenuhi kebutuhan daya Anda.",
     },
 };
+
 
 export const featuresTranslations = {
     en: {
         title: "Our Services",
         description:
-            "We offer comprehensive solutions for generator sets, from distribution to maintenance, ensuring reliable performance for your business.",
+            "PT. Berkat Power Nusantara Energi offers end-to-end services for generator sets, ensuring optimal performance, efficiency, and reliability for your operations.",
         features: [
             {
-                title: "Distributor Generator Sets",
+                title: "Generator Set Distribution",
                 description:
-                    "Providing high-quality and reliable generator sets to meet the power needs of businesses across industries.",
+                    "Supplying high-quality and dependable generator sets to meet diverse power requirements across industries.",
                 icon: "🔌",
             },
             {
-                title: "Panel ATS & Panel Syncro Maker",
+                title: "ATS & Syncro Panel Manufacturing",
                 description:
-                    "Designing and manufacturing Automatic Transfer Switch (ATS) and Synchronization Panels for seamless power management.",
+                    "Expertly designing and manufacturing Automatic Transfer Switch (ATS) and Synchronization Panels for seamless energy management.",
                 icon: "⚙️",
             },
             {
-                title: "Installation",
+                title: "Professional Installation",
                 description:
-                    "Expert installation services to ensure your generator sets operate efficiently and reliably.",
+                    "Providing expert installation services to ensure efficient, safe, and reliable operation of your generator sets.",
                 icon: "🔧",
             },
             {
-                title: "Spare Parts for Generator Sets",
+                title: "Genuine Spare Parts",
                 description:
-                    "Supplying genuine spare parts for generator sets to maintain performance and extend operational lifespan.",
+                    "Supplying authentic spare parts to maintain the performance and extend the lifespan of your generator sets.",
                 icon: "🛠️",
             },
             {
-                title: "Generator Set Service",
+                title: "Repair & Servicing",
                 description:
-                    "Professional service and repair solutions to keep your generator sets running smoothly.",
+                    "Offering professional repair and servicing to keep your generator sets in top condition and minimize downtime.",
                 icon: "🔩",
             },
             {
-                title: "Generator Set Maintenance",
+                title: "Maintenance Services",
                 description:
-                    "Comprehensive maintenance services to ensure optimal performance and reduce downtime.",
+                    "Comprehensive maintenance packages to ensure long-term reliability and peak performance of your generator sets.",
                 icon: "🛡️",
             },
         ],
@@ -58,42 +61,42 @@ export const featuresTranslations = {
     id: {
         title: "Layanan Kami",
         description:
-            "Kami menyediakan solusi menyeluruh untuk genset, mulai dari distribusi hingga perawatan, memastikan kinerja yang andal untuk bisnis Anda.",
+            "PT. Berkat Power Nusantara Energi menawarkan layanan menyeluruh untuk genset, memastikan kinerja optimal, efisiensi, dan keandalan untuk operasional Anda.",
         features: [
             {
-                title: "Distributor Genset",
+                title: "Distribusi Genset",
                 description:
-                    "Menyediakan genset berkualitas tinggi dan andal untuk memenuhi kebutuhan daya berbagai industri.",
+                    "Menyuplai genset berkualitas tinggi dan andal untuk memenuhi kebutuhan daya yang beragam di berbagai industri.",
                 icon: "🔌",
             },
             {
-                title: "Pembuatan Panel ATS & Panel Sinkronisasi",
+                title: "Pembuatan Panel ATS & Sinkronisasi",
                 description:
-                    "Merancang dan membuat Panel Automatic Transfer Switch (ATS) dan Panel Sinkronisasi untuk manajemen daya yang mulus.",
+                    "Merancang dan memproduksi Panel Automatic Transfer Switch (ATS) dan Panel Sinkronisasi untuk manajemen daya yang efisien.",
                 icon: "⚙️",
             },
             {
-                title: "Instalasi",
+                title: "Instalasi Profesional",
                 description:
-                    "Layanan instalasi ahli untuk memastikan genset Anda beroperasi secara efisien dan andal.",
+                    "Memberikan layanan instalasi ahli untuk memastikan operasi genset Anda berjalan dengan efisien, aman, dan andal.",
                 icon: "🔧",
             },
             {
-                title: "Suku Cadang Genset",
+                title: "Suku Cadang Asli",
                 description:
-                    "Menyediakan suku cadang asli untuk genset guna menjaga kinerja dan memperpanjang umur operasional.",
+                    "Menyediakan suku cadang asli untuk menjaga kinerja dan memperpanjang umur operasional genset Anda.",
                 icon: "🛠️",
             },
             {
-                title: "Servis Genset",
+                title: "Servis & Perbaikan",
                 description:
-                    "Solusi servis dan perbaikan profesional untuk menjaga genset Anda tetap berjalan dengan lancar.",
+                    "Menawarkan solusi perbaikan dan servis profesional untuk menjaga genset Anda tetap dalam kondisi terbaik dan meminimalkan waktu henti.",
                 icon: "🔩",
             },
             {
-                title: "Perawatan Genset",
+                title: "Layanan Perawatan",
                 description:
-                    "Layanan perawatan menyeluruh untuk memastikan kinerja optimal dan mengurangi waktu henti.",
+                    "Paket perawatan menyeluruh untuk memastikan keandalan jangka panjang dan kinerja puncak genset Anda.",
                 icon: "🛡️",
             },
         ],

@@ -2,12 +2,14 @@ import { CoverImageObjects } from "./about";
 
 export const clientCoverImage: CoverImageObjects = {
     en: {
-        title: "Track Record",
-        description: "We collaborate with numerous companies, demonstrating exceptional commitment to delivery and responsibility.",
+        title: "Our Key Clients",
+        description:
+            "From residential to industrial and commercial projects, PT. Berkat Power Nusantara Energi is proud to partner with industry leaders like Yamaha, PLN, Bakrie Group, and Schneider Electric. We are committed to delivering reliable energy solutions tailored to every client’s needs.",
     },
     id: {
-        title: "Rekam Jejak",
-        description: "Kami berkolaborasi dengan banyak perusahaan, menunjukkan komitmen luar biasa terhadap pengiriman dan tanggung jawab.",
+        title: "Klien Utama Kami",
+        description:
+            "Dari proyek residensial hingga industri dan komersial, PT. Berkat Power Nusantara Energi bangga bermitra dengan pemimpin industri seperti Yamaha, PLN, Bakrie Group, dan Schneider Electric. Kami berkomitmen memberikan solusi energi andal sesuai kebutuhan klien.",
     },
 };
 
@@ -23,14 +25,14 @@ export const collageData = [
         ],
         translation: {
             en: {
-                title: "We've delivered great products to Bakrie Group, establishing trust.",
+                title: "Reliable Power Solutions for Bakrie Group",
                 description:
-                    "Since 2023, Bakrie Group has been our close partner for generator machines and more.",
+                    "Since 2023, Bakrie Group has entrusted us to power their operations with our high-quality generator solutions and maintenance services, ensuring seamless energy for their facilities.",
             },
             id: {
-                title: "Kami telah memberikan produk terbaik kepada Bakrie Group.",
+                title: "Solusi Daya Andal untuk Bakrie Group",
                 description:
-                    "Sejak tahun 2023, Bakrie Group telah menjadi mitra dekat kami untuk mesin generator.",
+                    "Sejak tahun 2023, Bakrie Group mempercayakan operasional mereka kepada kami dengan solusi generator berkualitas tinggi dan layanan perawatan, memastikan energi tanpa hambatan untuk fasilitas mereka.",
             },
         },
     },
@@ -43,14 +45,14 @@ export const collageData = [
         ],
         translation: {
             en: {
-                title: "Obayashi Group has trusted our products for over a year.",
+                title: "Partnering with Obayashi Group",
                 description:
-                    "Collaborating since 2022, Obayashi has used our products in major construction projects.",
+                    "Obayashi Group has been a valued partner since 2022, utilizing our products to ensure efficiency and reliability across their major construction projects in Indonesia.",
             },
             id: {
-                title: "Obayashi Group telah mempercayai produk kami selama lebih dari satu tahun.",
+                title: "Bermitra dengan Obayashi Group",
                 description:
-                    "Bekerja sama sejak 2022, Obayashi telah menggunakan produk kami di proyek besar.",
+                    "Obayashi Group telah menjadi mitra kami sejak 2022, menggunakan produk kami untuk memastikan efisiensi dan keandalan di proyek konstruksi besar mereka di Indonesia.",
             },
         },
     },
@@ -63,15 +65,16 @@ export const collageData = [
         ],
         translation: {
             en: {
-                title: "Kajima Corporation is another proud partner of ours.",
+                title: "Kajima Corporation: A Trusted Collaboration",
                 description:
-                    "Kajima Corporation relies on us for consistent quality and reliable service.",
+                    "Kajima Corporation relies on our cutting-edge generator systems to meet their demanding energy needs, cementing our relationship as a trusted energy provider.",
             },
             id: {
-                title: "Kajima Corporation adalah mitra yang membanggakan bagi kami.",
+                title: "Kajima Corporation: Kolaborasi Terpercaya",
                 description:
-                    "Kajima Corporation mengandalkan kami untuk kualitas yang konsisten dan layanan yang andal.",
+                    "Kajima Corporation mengandalkan sistem generator mutakhir kami untuk memenuhi kebutuhan energi mereka, menjadikan kami mitra energi terpercaya mereka.",
             },
         },
     },
 ];
+

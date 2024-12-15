@@ -11,11 +11,15 @@ jobs:
     runs-on: self-hosted
 
     steps:
-      - name: pull docker container
+      - name: Pull Docker container
         run: sudo docker pull resya202/genset-next:latest
 
-      - name: delete old docker container
+      - name: Delete old Docker container
         run: sudo docker rm -f genset-next-container || true
 
-      - name: run docker container
-        run: sudo docker run -d -p 80:3000 --name genset-next-container resya202/genset-next:latest
+      - name: Prune unused Docker resources
+        run: |
+          sudo docker system prune -af --volumes
+
+      - name: Run Docker container on port 81
+        run: sudo docker run -d -p 81:3000 --name genset-next-container resya202/genset-next:latest
