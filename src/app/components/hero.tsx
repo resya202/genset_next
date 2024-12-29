@@ -6,6 +6,30 @@ import { useLanguage } from "../context/languageContext";
 import { heroTranslations } from "../translations/home";
 
 export default function Hero() {
+
+  const redirectToWhatsApp = async () => {
+    const phoneNumber = "+6285877777271"; // Set your actual WhatsApp number here
+    const message = "Halo, saya tertarik untuk mengetahui lebih lanjut mengenai layanan BPN Energi dan produk genset yang Anda tawarkan. Saya mendapatkan informasi ini melalui situs web Anda.";
+    const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+  
+    try {
+      console.log("hit");
+      
+      // Call the API to update the click count
+      await fetch("/api/updateWhatsapp", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+      
+  
+      // Redirect to WhatsApp
+      window.location.href = whatsappURL;
+    } catch (error) {
+      console.error('Failed to record WhatsApp click:', error);
+    }
+  };
   const { language } = useLanguage();
 
   const t = heroTranslations[language];
@@ -56,12 +80,19 @@ export default function Hero() {
           </h1>
           <p className="mt-4 text-gray-600">{t.description}</p>
           <div className="mt-6 flex flex-col md:flex-row justify-center lg:justify-start gap-4">
-            <button className="px-6 py-3 md:w-56 bg-primaryBlack text-white rounded-lg hover:bg-primaryOrange hover:text-black font-semibold">
+            <button className="px-6 py-3 md:w-56 bg-primaryBlack text-white rounded-lg hover:bg-primaryOrange hover:text-black font-semibold"
+            onClick={redirectToWhatsApp}>
               {t.bookingButton}
             </button>
-            <button className="px-6 py-3 md:w-56 text-black bg-primaryOrange rounded-lg hover:text-white">
-              {t.downloadButton}
-            </button>
+            <button
+            className="px-6 py-3 md:w-56 text-black bg-primaryOrange rounded-lg hover:text-white"
+            onClick={() => {
+              const productPageUrl = '/products'; // Replace with the actual URL of your product page
+              window.location.href = productPageUrl;
+            }}
+          >
+            {t.downloadButton}
+          </button>
           </div>
 
           <section className="w-full lg:w-[95%] flex justify-between items-center py-4 bg-gray-50 mt-10 rounded-lg text-lg lg:text-3xl">

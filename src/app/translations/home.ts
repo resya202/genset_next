@@ -190,7 +190,8 @@ export const faqTranslations = {
 
 export const productTranslations = {
     en: {
-        generatorHeading: "Explore the Best Generators for Your Energy Needs",
+        generatorHeading: "Dont listen to us, Look at Them",
+        generatorSubHeadings: "PT Berkat Power Nusantara Energy Project and Sales",
         catalogButton: "View Catalog",
         orderButton: "Get a Quote",
         startFrom: "Starting from",
@@ -201,7 +202,8 @@ export const productTranslations = {
         submitButton: "Submit",
     },
     id: {
-        generatorHeading: "Jelajahi Generator Terbaik untuk Kebutuhan Energi Anda",
+        generatorHeading: "Lihatlah Mereka",
+        generatorSubHeadings: "PT Berkat Power Nusantara Energy Project and Sales",
         catalogButton: "Lihat Katalog",
         orderButton: "Dapatkan Penawaran",
         startFrom: "Mulai dari",
@@ -271,9 +273,9 @@ export const testimonialsTranslations = {
 export const footerTranslations = {
     en: {
         contactTitle: "Contact",
-        contactAddress: "Puri Indah, West Jakarta, Indonesia.",
-        contactPhone: "+62 856 9955 1109",
-        contactEmail: "support@gmail.com",
+        contactAddress: "My Republic Plaza (d/h Green Office Park 6), Wing A Lantai Dasar Zona 6 Jalan Grand Boulevard, Jl. BSD Green Office Park, Sampora, Kec. Cisauk, Kabupaten Tangerang, Banten 15345",
+        contactPhone: "+6285877777271",
+        contactEmail: "ptberkatpowernusantaraenergy@gmail.com",
         pagedone: "Pagedone",
         home: "Home",
         about: "About",
@@ -284,11 +286,11 @@ export const footerTranslations = {
         quickStart: "Quick Start",
         documentation: "Documentation",
         userGuide: "User Guide",
-        newsletterTitle: "Join Our Community for Exclusive Updates",
-        newsletterDescription:
-            "Subscribe to Our Exclusive Newsletter for the Latest Updates.",
-        placeholder: "mail@gmail.com",
-        subscribe: "Subscribe",
+        // newsletterTitle: "Join Our Community for Exclusive Updates",
+        // newsletterDescription:
+        //     "Subscribe to Our Exclusive Newsletter for the Latest Updates.",
+        // placeholder: "mail@gmail.com",
+        // subscribe: "Subscribe",
         copyright: "©Company 2024, All rights reserved.",
     },
     id: {
