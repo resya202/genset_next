@@ -63,7 +63,23 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white scrollbar-none`}
       >
         <LanguageProvider>
-          <LayoutWrapper>{children}</LayoutWrapper>
+          <LayoutWrapper>
+            {children}
+            {/* Sticky WhatsApp Button */}
+            <a
+              href={`https://wa.me/+6285877777271?text=${encodeURIComponent("Halo, saya tertarik untuk mengetahui lebih lanjut mengenai layanan BPN Energi dan produk genset yang Anda tawarkan. Saya mendapatkan informasi ini melalui situs web Anda.")}`} // Replace with your WhatsApp number and message
+              target="_blank"
+              rel="noopener noreferrer"
+              className="fixed bottom-4 right-4 bg-green-500 p-4 rounded-full shadow-lg hover:bg-green-600 transition-all"
+            >
+              <img
+                src="whatsapp.png" // Replace with the actual path to your PNG file
+                alt="WhatsApp"
+                className="w-6 h-6"
+              />
+            </a>
+
+            </LayoutWrapper>
         </LanguageProvider>
         {/* <Script
           src="https://cdn.jsdelivr.net/npm/pagedone@1.2.2/src/js/pagedone.js"

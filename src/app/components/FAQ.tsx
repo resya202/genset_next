@@ -8,6 +8,29 @@ import { faqTranslations } from "../translations/home";
 import { BiSupport } from "react-icons/bi";
 
 export default function FAQ() {
+  const redirectToWhatsApp = async () => {
+    const phoneNumber = "+6285877777271"; // Set your actual WhatsApp number here
+    const message = "Halo, saya tertarik untuk mengetahui lebih lanjut mengenai layanan BPN Energi dan produk genset yang Anda tawarkan. Saya mendapatkan informasi ini melalui situs web Anda.";
+    const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+  
+    try {
+      console.log("hit");
+      
+      // Call the API to update the click count
+      await fetch("/api/updateWhatsapp", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+      
+  
+      // Redirect to WhatsApp
+      window.location.href = whatsappURL;
+    } catch (error) {
+      console.error('Failed to record WhatsApp click:', error);
+    }
+  };
   const { language } = useLanguage();
   const [isFAQVisible, setIsFAQVisible] = useState(false);
   const [isImageVisible, setIsImageVisible] = useState(false);
@@ -92,7 +115,9 @@ export default function FAQ() {
             }`}
           >
             <p className="text-gray-600">{t.contactPrompt}</p>
-            <button className="mt-4 flex items-center justify-center gap-2 bg-primaryBlack text-white text-lg font-medium px-6 py-3 rounded-full hover:bg-primaryOrange transition">
+            <button className="mt-4 flex items-center justify-center gap-2 bg-primaryBlack text-white text-lg font-medium px-6 py-3 rounded-full hover:bg-primaryOrange transition"
+            onClick={redirectToWhatsApp}
+            >
               <BiSupport className="text-2xl" />
               {t.contactLink}
             </button>
