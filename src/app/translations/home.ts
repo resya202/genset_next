@@ -308,11 +308,11 @@ export const footerTranslations = {
         quickStart: "Panduan Cepat",
         documentation: "Dokumentasi",
         userGuide: "Panduan Pengguna",
-        newsletterTitle: "Bergabung dengan Newsletter Kami",
-        newsletterDescription:
-            "Berlangganan Newsletter Eksklusif Kami untuk Mendapatkan Pembaruan Terbaru.",
-        placeholder: "mail@gmail.com",
-        subscribe: "Langganan",
+        // newsletterTitle: "Bergabung dengan Newsletter Kami",
+        // newsletterDescription:
+        //     "Berlangganan Newsletter Eksklusif Kami untuk Mendapatkan Pembaruan Terbaru.",
+        // placeholder: "mail@gmail.com",
+        // subscribe: "Langganan",
         copyright: "©Company 2024, Semua hak dilindungi.",
     },
 };
