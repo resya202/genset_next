@@ -233,12 +233,12 @@ export const testimonialsTranslations = {
             },
             {
                 id: 2,
-                src: "/features/IMG_7124.webp",
-                name: "PT. Wima Jaya Artek",
+                src: "/FAQ/ALAZHAR4.webp",
+                name: "AL AZHAR GROUP",
                 from: "Indonesia",
                 companyName: "Client",
                 testimonial:
-                    "From purchasing to commissioning, the team ensured our 1000kVA generator operated flawlessly. Highly recommended.",
+                    "From purchasing to commissioning, the team ensured ourgenerator operated flawlessly. Highly recommended.",
             },
         ],
     },
@@ -258,16 +258,68 @@ export const testimonialsTranslations = {
             },
             {
                 id: 2,
-                src: "/features/IMG_7124.webp",
-                name: "PT. Wima Jaya Artek",
+                src: "/FAQ/ALAZHAR4.webp",
+                name: "AL AZHAR GROUP",
                 from: "Indonesia",
                 companyName: "Klien",
                 testimonial:
-                    "Dari pembelian hingga commissioning, tim memastikan generator 1000kVA kami beroperasi dengan sempurna. Sangat direkomendasikan.",
+                    "Dari pembelian hingga commissioning, tim memastikan generator kami beroperasi dengan sempurna. Sangat direkomendasikan.",
             },
         ],
     },
 };
+
+export const caraouselTeam = {
+    en: {
+        title: "Our Team Members",
+        subtitle: "Meet the dedicated professionals behind our success.",
+        reviews: [
+            {
+                id: 1,
+                src: "/FAQ/MARKETER1.webp",
+                testimonial:
+                    "Our team is built on expertise, dedication, and a passion for delivering the best solutions. We work together to ensure exceptional service and results.",
+            },
+            {
+                id: 2,
+                src: "/FAQ/MARKETER2.webp",
+                testimonial:
+                    "At PT. Berkat Power Nusantara Energi, our team is committed to professionalism and efficiency in every project we undertake.",
+            },
+            {
+                id: 3,
+                src: "/FAQ/MARKETER3.webp",
+                testimonial:
+                    "Collaboration and expertise define our team, ensuring that we consistently provide top-quality service to our clients.",
+            },
+        ],
+    },
+    id: {
+        title: "Anggota Tim Kami",
+        subtitle: "Kenali para profesional yang berdedikasi di balik kesuksesan kami.",
+        reviews: [
+            {
+                id: 1,
+                src: "/FAQ/MARKETER1.webp",
+                testimonial:
+                    "Tim kami dibangun di atas keahlian, dedikasi, dan semangat untuk memberikan solusi terbaik. Kami bekerja sama untuk memastikan layanan dan hasil yang luar biasa.",
+            },
+            {
+                id: 2,
+                src: "/FAQ/MARKETER2.webp",
+                testimonial:
+                    "Di PT. Berkat Power Nusantara Energi, tim kami berkomitmen pada profesionalisme dan efisiensi dalam setiap proyek yang kami jalankan.",
+            },
+            {
+                id: 3,
+                src: "/FAQ/MARKETER3.webp",
+                testimonial:
+                    "Kolaborasi dan keahlian adalah ciri khas tim kami, memastikan bahwa kami selalu memberikan layanan berkualitas tinggi kepada klien kami.",
+            },
+        ],
+    },
+};
+
 
 
 export const footerTranslations = {

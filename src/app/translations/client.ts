@@ -18,7 +18,7 @@ export const clientCoverImage: CoverImageObjects = {
 export const collageData = [
     {
         images: [
-            "/FAQ/IMG_7299.webp",
+            "/FAQ/BAKRIE1.webp",
             "/FAQ/IMG_7299.webp",
             "/features/IMG_7124.webp",
             "/logos/circle/logo-bakrie.png",
@@ -38,41 +38,41 @@ export const collageData = [
     },
     {
         images: [
-            "/FAQ/IMG_7299.webp",
-            "/FAQ/IMG_7299.webp",
-            "/features/IMG_7124.webp",
-            "/logos/circle/logo-obayashi.png",
+            "/FAQ/ALAZHAR1.webp",
+            "/FAQ/ALAZHAR3.webp",
+            "/FAQ/ALAZHAR2.webp",
+            "/logos/circle/logo-azhar.png",
         ],
         translation: {
             en: {
-                title: "Partnering with Obayashi Group",
+                title: "Partnering with Al-Azhar Group",
                 description:
-                    "Obayashi Group has been a valued partner since 2022, utilizing our products to ensure efficiency and reliability across their major construction projects in Indonesia.",
+                    "Al-Azhar Group has been a valued partner, utilizing our products to ensure efficiency and reliability across their major construction projects in Indonesia.",
             },
             id: {
-                title: "Bermitra dengan Obayashi Group",
+                title: "Bermitra dengan Al-Azhar Group",
                 description:
-                    "Obayashi Group telah menjadi mitra kami sejak 2022, menggunakan produk kami untuk memastikan efisiensi dan keandalan di proyek konstruksi besar mereka di Indonesia.",
+                    "Al-Azhar Group telah menjadi mitra kami, menggunakan produk kami untuk memastikan efisiensi dan keandalan di proyek konstruksi besar mereka di Indonesia.",
             },
         },
     },
     {
         images: [
-            "/FAQ/IMG_7299.webp",
-            "/FAQ/IMG_7299.webp",
-            "/features/IMG_7124.webp",
-            "/logos/circle/logo-kajima.png",
+            "/FAQ/PSN3.webp",
+            "/FAQ/PSN2.webp",
+            "/FAQ/PSN1.webp",
+            "/logos/circle/logo-psn.png",
         ],
         translation: {
             en: {
-                title: "Kajima Corporation: A Trusted Collaboration",
+                title: "PT SATELIT NUSANTARA LIMA : A Trusted Collaboration",
                 description:
-                    "Kajima Corporation relies on our cutting-edge generator systems to meet their demanding energy needs, cementing our relationship as a trusted energy provider.",
+                    "PT SATELIT NUSANTARA LIMA relies on our cutting-edge generator systems to meet their demanding energy needs, cementing our relationship as a trusted energy provider.",
             },
             id: {
-                title: "Kajima Corporation: Kolaborasi Terpercaya",
+                title: "PT SATELIT NUSANTARA LIMA: Kolaborasi Terpercaya",
                 description:
-                    "Kajima Corporation mengandalkan sistem generator mutakhir kami untuk memenuhi kebutuhan energi mereka, menjadikan kami mitra energi terpercaya mereka.",
+                    "PT SATELIT NUSANTARA LIMA mengandalkan sistem generator mutakhir kami untuk memenuhi kebutuhan energi mereka, menjadikan kami mitra energi terpercaya mereka.",
             },
         },
     },
