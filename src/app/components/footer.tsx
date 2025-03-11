@@ -97,33 +97,27 @@ export default function Footer() {
               />
             </div>
 
-            <h4 className="text-sm md:text-lg font-bold">
+            {/* <h4 className="text-sm md:text-lg font-bold">
               {t.newsletterTitle}
-            </h4>
+            </h4> */}
           </div>
-          <p className="hidden md:block text-sm mb-4">
+          {/* <p className="hidden md:block text-sm mb-4">
             {t.newsletterDescription}
-          </p>
+          </p> */}
           <div className="bg-white rounded-lg p-4">
-            <div className="flex items-center border rounded-lg overflow-hidden gap-2">
-              <input
+            <div className="flex items-center rounded-lg overflow-hidden gap-2">
+              {/* <input
                 type="email"
                 className="px-4 py-3 outline-none grow placeholder-gray-500 w-full md:w-auto"
                 placeholder={t.placeholder}
-              />
-              <button className="bg-primaryOrange text-white px-4 py-3 hover:bg-primaryOrange transition">
+              /> */}
+              {/* <button className="bg-primaryOrange text-white px-4 py-3 hover:bg-primaryOrange transition">
                 {t.subscribe}
-              </button>
+              </button> */}
             </div>
-            <div className="flex gap-4 items-center justify-center md:justify-start mt-4 text-black">
+            <div className="flex gap-4 items-center justify-center md:justify-start text-black">
               <Link
-                href="https://twitter.com"
-                className="flex items-center gap-2"
-              >
-                <FaSquareXTwitter className="text-2xl text-black" />X (Twitter)
-              </Link>
-              <Link
-                href="https://instagram.com"
+                href="https://www.instagram.com/bpnenergi/profilecard/?igsh=MWZ2YjhuYXo3NzJ4Mw=="
                 className="flex items-center gap-2"
               >
                 <FaInstagram className="text-2xl text-red-400" />
