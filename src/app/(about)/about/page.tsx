@@ -8,7 +8,7 @@ export default function AboutPage() {
     <section>
       {/* Hero Section with Centered Text */}
       <CoverImage
-        imageSrc="/FAQ/IMG_7299.webp"
+        imageSrc="/FAQ/COVERIMAGEABOUT.webp"
         translationObject={aboutCoverImage}
       />
 

@@ -9,7 +9,7 @@ export default function Products() {
   return (
     <section>
       <CoverImage
-        imageSrc="/FAQ/IMG_7299.webp"
+        imageSrc="/FAQ/PRODUCTCOVERIMAGE2.webp"
         translationObject={productCoverImage}
       />
       <div className="my-10 md:max-w-[1480px] md:mx-auto md:p-6">
