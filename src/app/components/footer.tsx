@@ -4,9 +4,7 @@
 import Link from "next/link";
 import { useLanguage } from "../context/languageContext";
 import { footerTranslations } from "../translations/home";
-import { FaInstagram, FaFacebook } from "react-icons/fa";
-import { FaSquareXTwitter } from "react-icons/fa6";
-import { IoLogoYoutube } from "react-icons/io";
+import { FaInstagram } from "react-icons/fa";
 import { MdAlternateEmail } from "react-icons/md";
 import { GrMapLocation } from "react-icons/gr";
 import { IoLogoWhatsapp } from "react-icons/io";
@@ -29,7 +27,7 @@ export default function Footer() {
             className="flex items-center gap-2 hover:text-primaryOrange mb-2"
           >
             <GrMapLocation className="text-2xl text-primaryOrange" />
-            {t.contactAddress}
+            <p className="text-sm">{t.contactAddress}</p>
           </Link>
           <p className="flex items-center gap-2 hover:text-primaryOrange mb-2">
             <IoLogoWhatsapp className="text-2xl text-primaryOrange" />

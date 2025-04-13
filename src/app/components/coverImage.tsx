@@ -12,7 +12,7 @@ type CoverImageProps = {
 export default function CoverImage({
   imageSrc,
   translationObject,
-}: CoverImageProps) {
+}: Readonly<CoverImageProps>) {
   const { language } = useLanguage();
 
   const t = translationObject[language];

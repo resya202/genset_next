@@ -13,6 +13,17 @@ export const clientCoverImage: CoverImageObjects = {
     },
 };
 
+export const ClientPage = {
+    en: {
+        passion: "We're many brilliant minds, collaborating on the same platform",
+        atBPN: "At BPN, we foster a culture of adaptability and youthful innovation, leveraging our state-of-the-art technology to rapidly adjust to market research, conditions, and customer needs."
+    },
+    id: {
+        passion: "Kami adalah kumpulan pemikir brilian, berkolaborasi dalam platform yang sama",
+        atBPN: "Di BPN, kami menumbuhkan budaya adaptabilitas dan inovasi yang segar, memanfaatkan teknologi mutakhir kami untuk menyesuaikan diri dengan cepat terhadap riset pasar, kondisi, dan kebutuhan pelanggan."
+    }
+}
+
 
 
 export const collageData = [
