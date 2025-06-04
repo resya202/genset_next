@@ -2,21 +2,20 @@
 import React from "react";
 import Image from "next/image";
 import { useLanguage } from "@/app/context/languageContext";
-import { collageData } from "@/app/translations/client";
+import { ClientPage, collageData } from "@/app/translations/client";
 import LogosWithText from "./logosWithText";
 
 const CollageWithLogos = () => {
   const { language } = useLanguage();
+  const t = ClientPage[language];
 
   return (
     <section className="w-full lg:max-w-7xl mx-auto py-10 px-4">
       <h2 className="text-3xl font-bold text-center mb-6">
-        We&apos;re many brilliant minds, collaborating on the same platform
+        {t.passion}
       </h2>
       <p className="text-center text-gray-600 mb-8">
-        At Pagedone, we foster a culture of adaptability and youthful
-        innovation, leveraging our state-of-the-art technology to rapidly adjust
-        to market research, conditions, and customer needs.
+        {t.atBPN}
       </p>
       <div className="space-y-12">
         {collageData.map((row, index) => {

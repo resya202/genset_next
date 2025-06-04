@@ -190,7 +190,8 @@ export const faqTranslations = {
 
 export const productTranslations = {
     en: {
-        generatorHeading: "Explore the Best Generators for Your Energy Needs",
+        generatorHeading: "Dont listen to us, Look at Them",
+        generatorSubHeadings: "PT Berkat Power Nusantara Energy Project and Sales",
         catalogButton: "View Catalog",
         orderButton: "Get a Quote",
         startFrom: "Starting from",
@@ -201,7 +202,8 @@ export const productTranslations = {
         submitButton: "Submit",
     },
     id: {
-        generatorHeading: "Jelajahi Generator Terbaik untuk Kebutuhan Energi Anda",
+        generatorHeading: "Lihatlah Mereka",
+        generatorSubHeadings: "PT Berkat Power Nusantara Energy Project and Sales",
         catalogButton: "Lihat Katalog",
         orderButton: "Dapatkan Penawaran",
         startFrom: "Mulai dari",
@@ -231,12 +233,12 @@ export const testimonialsTranslations = {
             },
             {
                 id: 2,
-                src: "/features/IMG_7124.webp",
-                name: "PT. Wima Jaya Artek",
+                src: "/FAQ/ALAZHAR4.webp",
+                name: "AL AZHAR GROUP",
                 from: "Indonesia",
                 companyName: "Client",
                 testimonial:
-                    "From purchasing to commissioning, the team ensured our 1000kVA generator operated flawlessly. Highly recommended.",
+                    "From purchasing to commissioning, the team ensured ourgenerator operated flawlessly. Highly recommended.",
             },
         ],
     },
@@ -256,25 +258,77 @@ export const testimonialsTranslations = {
             },
             {
                 id: 2,
-                src: "/features/IMG_7124.webp",
-                name: "PT. Wima Jaya Artek",
+                src: "/FAQ/ALAZHAR4.webp",
+                name: "AL AZHAR GROUP",
                 from: "Indonesia",
                 companyName: "Klien",
                 testimonial:
-                    "Dari pembelian hingga commissioning, tim memastikan generator 1000kVA kami beroperasi dengan sempurna. Sangat direkomendasikan.",
+                    "Dari pembelian hingga commissioning, tim memastikan generator kami beroperasi dengan sempurna. Sangat direkomendasikan.",
+            },
+        ],
+    },
+};
+
+export const caraouselTeam = {
+    en: {
+        title: "Our Team Members",
+        subtitle: "Meet the dedicated professionals behind our success.",
+        reviews: [
+            {
+                id: 1,
+                src: "/FAQ/MARKETER1.webp",
+                testimonial:
+                    "Our team is built on expertise, dedication, and a passion for delivering the best solutions. We work together to ensure exceptional service and results.",
+            },
+            {
+                id: 2,
+                src: "/FAQ/MARKETER2.webp",
+                testimonial:
+                    "At PT. Berkat Power Nusantara Energi, our team is committed to professionalism and efficiency in every project we undertake.",
+            },
+            {
+                id: 3,
+                src: "/FAQ/MARKETER3.webp",
+                testimonial:
+                    "Collaboration and expertise define our team, ensuring that we consistently provide top-quality service to our clients.",
+            },
+        ],
+    },
+    id: {
+        title: "Anggota Tim Kami",
+        subtitle: "Kenali para profesional yang berdedikasi di balik kesuksesan kami.",
+        reviews: [
+            {
+                id: 1,
+                src: "/FAQ/MARKETER1.webp",
+                testimonial:
+                    "Tim kami dibangun di atas keahlian, dedikasi, dan semangat untuk memberikan solusi terbaik. Kami bekerja sama untuk memastikan layanan dan hasil yang luar biasa.",
+            },
+            {
+                id: 2,
+                src: "/FAQ/MARKETER2.webp",
+                testimonial:
+                    "Di PT. Berkat Power Nusantara Energi, tim kami berkomitmen pada profesionalisme dan efisiensi dalam setiap proyek yang kami jalankan.",
+            },
+            {
+                id: 3,
+                src: "/FAQ/MARKETER3.webp",
+                testimonial:
+                    "Kolaborasi dan keahlian adalah ciri khas tim kami, memastikan bahwa kami selalu memberikan layanan berkualitas tinggi kepada klien kami.",
             },
         ],
     },
 };
 
 
+
 export const footerTranslations = {
     en: {
         contactTitle: "Contact",
-        contactAddress: "Puri Indah, West Jakarta, Indonesia.",
-        contactPhone: "+62 856 9955 1109",
-        contactEmail: "support@gmail.com",
-        pagedone: "Pagedone",
+        contactAddress: "My Republic Plaza (d/h Green Office Park 6), Wing A Lantai Dasar Zona 6 Jalan Grand Boulevard, Jl. BSD Green Office Park, Sampora, Kec. Cisauk, Kabupaten Tangerang, Banten 15345",
+        contactPhone: "+6285877777271",
+        contactEmail: "ptberkatpowernusantaraenergi@gmail.com",
+        pagedone: "Support And Service",
         home: "Home",
         about: "About",
         products: "Products Catalogs",
@@ -284,19 +338,19 @@ export const footerTranslations = {
         quickStart: "Quick Start",
         documentation: "Documentation",
         userGuide: "User Guide",
-        newsletterTitle: "Join Our Community for Exclusive Updates",
-        newsletterDescription:
-            "Subscribe to Our Exclusive Newsletter for the Latest Updates.",
-        placeholder: "mail@gmail.com",
-        subscribe: "Subscribe",
+        // newsletterTitle: "Join Our Community for Exclusive Updates",
+        // newsletterDescription:
+        //     "Subscribe to Our Exclusive Newsletter for the Latest Updates.",
+        // placeholder: "mail@gmail.com",
+        // subscribe: "Subscribe",
         copyright: "©Company 2024, All rights reserved.",
     },
     id: {
         contactTitle: "Kontak",
-        contactAddress: "Puri Indah, Jakarta Barat, Indonesia.",
-        contactPhone: "+62 856 9955 1109",
-        contactEmail: "dukungan@gmail.com",
-        pagedone: "Pagedone",
+        contactAddress: "My Republic Plaza (d/h Green Office Park 6), Wing A Lantai Dasar Zona 6 Jalan Grand Boulevard, Jl. BSD Green Office Park, Sampora, Kec. Cisauk, Kabupaten Tangerang, Banten 15345",
+        contactPhone: "+6285877777271",
+        contactEmail: "ptberkatpowernusantaraenergi@gmail.com",
+        pagedone: "Dukungan dan Layanan",
         home: "Beranda",
         about: "Tentang",
         products: "Catalog Produk",
@@ -306,11 +360,11 @@ export const footerTranslations = {
         quickStart: "Panduan Cepat",
         documentation: "Dokumentasi",
         userGuide: "Panduan Pengguna",
-        newsletterTitle: "Bergabung dengan Newsletter Kami",
-        newsletterDescription:
-            "Berlangganan Newsletter Eksklusif Kami untuk Mendapatkan Pembaruan Terbaru.",
-        placeholder: "mail@gmail.com",
-        subscribe: "Langganan",
+        // newsletterTitle: "Bergabung dengan Newsletter Kami",
+        // newsletterDescription:
+        //     "Berlangganan Newsletter Eksklusif Kami untuk Mendapatkan Pembaruan Terbaru.",
+        // placeholder: "mail@gmail.com",
+        // subscribe: "Langganan",
         copyright: "©Company 2024, Semua hak dilindungi.",
     },
 };

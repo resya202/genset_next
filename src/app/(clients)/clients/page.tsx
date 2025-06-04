@@ -7,7 +7,7 @@ export default function ClientsPage() {
   return (
     <section>
       <CoverImage
-        imageSrc="/FAQ/IMG_7299.webp"
+        imageSrc="/FAQ/COVERIMAGECLIENTS.webp"
         translationObject={clientCoverImage}
       />
 

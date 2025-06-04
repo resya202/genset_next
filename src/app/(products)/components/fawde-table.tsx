@@ -17,6 +17,12 @@ const FawdeTable = () => {
           Download Pamflet
         </Link>
       </div>
+      <div className="mb-6 text-sm">
+        <p>
+          FAWDE (FAW Jiefang Automotive Diesel Engine Co., Ltd.), bagian dari FAW Group China yang berdiri sejak 1943, merupakan produsen mesin diesel modern yang telah diekspor ke lebih dari 30 negara. Genset FAWDE dikenal dengan performa tangguh, efisiensi bahan bakar tinggi, dan harga yang terjangkau. Banyak digunakan di sektor industri, konstruksi, pertanian, hingga proyek infrastruktur. Hadir dalam berbagai pilihan kapasitas, dengan opsi *silent* untuk mengurangi kebisingan. Perawatan mudah, suku cadang tersedia luas, serta dukungan layanan purna jual yang baik menjadikan FAWDE sebagai pilihan tepat untuk kebutuhan listrik cadangan yang andal dan ekonomis.
+        </p>
+      </div>
+
       <div className="overflow-x-auto w-full">
         <table className="table-auto w-full border-collapse border border-gray-300">
           <thead>

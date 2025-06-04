@@ -14,11 +14,19 @@ const PerkinsTable: React.FC = () => {
           href="/PDF/perkins_list.pdf"
           target="_blank"
           rel="noopener noreferrer"
-          className=" bg-primaryOrange text-xs py-4 px-2 text-black font-semibold hover:bg-primaryDarkBlue hover:text-white rounded-lg"
+          className="bg-primaryOrange text-xs py-4 px-2 text-black font-semibold hover:bg-primaryDarkBlue hover:text-white rounded-lg"
         >
           Download Pamflet
         </Link>
       </div>
+
+      {/* Summary inserted here */}
+      <div className="mb-6 text-sm">
+        <p>
+          Perkins Engines Company Limited didirikan di Peterborough, Inggris, pada tahun 1932 dan dikenal luas berkat mesin bensin dan terutama mesin diesel-nya. Sejak awal 1970-an, Perkins menjadi pemasok eksklusif bagi Caterpillar Inc., lalu diakuisisi oleh Caterpillar pada 1998 senilai 1,325 miliar dolar. Kini, Perkins diakui sebagai produsen mesin diesel terbesar di dunia dengan pabrik di Inggris, AS, Brasil, China, India, dan Jepang. Perusahaan menjaga standar teknik tinggi serta keandalan produknya, sekaligus aktif dalam upaya lingkungan dan tanggung jawab sosial. Temukan berbagai genset Perkins populer di pasaran—dengan harga terjangkau, Anda bisa mendapatkan generator sesuai kebutuhan.
+        </p>
+      </div>
+
       <div className="max-w-full overflow-x-auto">
         <table className="table-auto w-full border-collapse border border-gray-300 text-center">
           <thead>
@@ -62,11 +70,9 @@ const PerkinsTable: React.FC = () => {
               <th colSpan={2} className="border border-gray-300 px-4 py-2">
                 Power (KW)
               </th>
-
               <th rowSpan={2} className="border border-gray-300 px-4 py-2">
                 Fuel Con (L/H)
               </th>
-
               <th colSpan={2} className="border border-gray-300 px-4 py-2">
                 Power (KVA)
               </th>
@@ -76,18 +82,15 @@ const PerkinsTable: React.FC = () => {
               <th rowSpan={2} className="border border-gray-300 px-4 py-2">
                 Fuel Con (L/H)
               </th>
-
               <th rowSpan={2} className="border border-gray-300 px-4 py-2">
                 Engine Model
               </th>
               <th rowSpan={2} className="border border-gray-300 px-4 py-2">
                 Cyl
               </th>
-
               <th rowSpan={2} className="border border-gray-300 px-4 py-2">
                 Model
               </th>
-
               {/* Subheaders for Open Type */}
               <th rowSpan={2} className="border border-gray-300 px-4 py-2">
                 Dimensions (CM)
@@ -98,7 +101,6 @@ const PerkinsTable: React.FC = () => {
               <th rowSpan={2} className="border border-gray-300 px-4 py-2">
                 Tank (L)
               </th>
-
               {/* Subheaders for Silent Type */}
               <th rowSpan={2} className="border border-gray-300 px-4 py-2">
                 Dimensions (CM)
@@ -115,7 +117,6 @@ const PerkinsTable: React.FC = () => {
               <th className="border border-gray-300 px-4 py-2">Standby</th>
               <th className="border border-gray-300 px-4 py-2">Prime</th>
               <th className="border border-gray-300 px-4 py-2">Standby</th>
-
               {/* For Engine Specifications */}
               <th className="border border-gray-300 px-4 py-2">Prime</th>
               <th className="border border-gray-300 px-4 py-2">Standby</th>
