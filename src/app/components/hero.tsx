@@ -95,7 +95,7 @@ export default function Hero() {
           </button>
           </div>
 
-          <section className="w-full lg:w-[95%] flex justify-between items-center py-4 bg-gray-50 mt-10 rounded-lg text-lg lg:text-3xl">
+          {/* <section className="w-full lg:w-[95%] flex justify-between items-center py-4 bg-gray-50 mt-10 rounded-lg text-lg lg:text-3xl">
             <div className="text-center border-r pr-2 w-1/3">
               <h3 className="font-bold text-primaryOrange">5+ Years</h3>
               <p className="text-xs text-gray-600">
@@ -114,7 +114,7 @@ export default function Hero() {
                 {t.statistics.satisfiedRate}
               </p>
             </div>
-          </section>
+          </section> */}
         </div>
 
         <div className="right-section w-full lg:w-1/2 mt-8 lg:mt-0 relative flex justify-center items-center flex-col lg:flex-row gap-8">

@@ -18,6 +18,13 @@ const CumminsTable = () => {
           Download Pamflet
         </Link>
       </div>
+      {/* Summary inserted here */}
+      <div className="mb-6 text-sm">
+        <p>
+          Cummins Inc., perusahaan asal Amerika Serikat yang berdiri sejak 1919, dikenal sebagai salah satu produsen genset dan mesin diesel terkemuka di dunia. Genset Cummins banyak dipilih untuk kebutuhan industri, perkantoran, dan pabrik berkat performanya yang andal dan daya tahan tinggi. Tersedia dalam berbagai tipe, termasuk *silent* yang minim kebisingan, serta kapasitas besar mulai dari 25 KVA. Selain perawatan yang mudah, Cummins juga didukung layanan purna jual berkualitas dan sistem pembayaran fleksibel. Dengan harga bersaing, genset Cummins menjadi solusi ideal bagi bisnis yang membutuhkan pasokan listrik stabil kapan saja.
+        </p>
+      </div>
+
       <div className="overflow-x-auto max-w-full">
         <table className="table-auto w-full border-collapse border border-gray-300">
           <thead>
