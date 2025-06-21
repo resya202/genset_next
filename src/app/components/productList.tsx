@@ -35,7 +35,7 @@ export const generatorHighlightDummy: GeneratorHighlight[] = [
     // startingPriceUsd: 200000,
   },
   {
-    generator: "PT PSM MANUFACTURE PANEL ATS",
+    generator: "PT PSN MANUFACTURE PANEL ATS",
     image: "/genset/project4.webp",
     // startingPriceUsd: 200000,
   },
