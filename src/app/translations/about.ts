@@ -18,6 +18,19 @@ export const aboutCoverImage: CoverImageObjects = {
     },
 };
 
+export const ArticleCoverImage: CoverImageObjects = {
+    en: {
+      title: "Insights & Articles",
+      description:
+        "Dive into our library of expert articles on power solutions, generator technology, industry best practices, and more. Stay up-to-date with the latest trends, technical deep-dives, and practical tips tailored for residential, industrial, and commercial energy needs.",
+    },
+    id: {
+      title: "Wawasan & Artikel",
+      description:
+        "Selami koleksi artikel ahli kami tentang solusi daya, teknologi generator, praktik terbaik industri, dan lainnya. Tetap terdepan dengan tren terbaru, analisis mendalam, dan tips praktis yang disesuaikan untuk kebutuhan energi residensial, industri, dan komersial.",
+    },
+  };
+  
 
 
 

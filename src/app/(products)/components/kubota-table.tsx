@@ -17,6 +17,12 @@ const KubotaTable = () => {
           Download Pamflet
         </Link>
       </div>
+      <div className="mb-6 text-sm">
+        <p>
+          Kubota Corporation, perusahaan asal Jepang yang berdiri sejak 1890, dikenal dengan produk mesin diesel berkualitas tinggi untuk berbagai aplikasi. Genset Kubota banyak digunakan di sektor pertanian, konstruksi, UKM, dan perumahan karena keunggulan pada efisiensi bahan bakar, suara halus, dan desain ringkas. Tersedia pilihan *silent* maupun *open type*, dengan kapasitas mulai dari 5 KVA hingga di atas 30 KVA. Dikenal mudah dalam perawatan serta hemat biaya operasional, genset Kubota menjadi pilihan tepat untuk kebutuhan listrik cadangan yang handal, dengan layanan purna jual terpercaya dan harga yang kompetitif.
+        </p>
+      </div>
+
       <div className="max-w-full overflow-x-auto">
         <table className="table-auto w-full border-collapse border border-gray-300">
           <thead>

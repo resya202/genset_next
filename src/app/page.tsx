@@ -6,6 +6,7 @@ import LenisProvider from "./provider/lenisProvider";
 import dynamic from "next/dynamic";
 import { homeCoverImage } from "./translations/home";
 import LogoMarquee from "./components/logoMarquee";
+import Carousel from "./components/caraouselTeam";
 
 const Hero = dynamic(() => import("./components/hero"), {
   loading: () => <div>Loading Hero...</div>,
@@ -64,9 +65,11 @@ export default function Home() {
       <Hero />
       <div className="max-w-[1480px] m-auto">
         {/* Lazy-loaded components */}
+        <Carousel />
         <Features />
         <FAQ />
         <Testimonials />
+        
 
         <LogoMarquee title="Some of our valuable clients" />
         <ProductList />

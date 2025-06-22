@@ -1,7 +1,7 @@
 generator client {
   provider      = "prisma-client-js"
-  output        = "../generated/core-client"
-  binaryTargets = ["native", "linux-arm64-openssl-3.0.x"]
+  binaryTargets = ["native"]
+  engineType    = "binary"
 }
 
 datasource db {
@@ -22,4 +22,16 @@ model Whatsapp {
   id         Int      @id @default(autoincrement())
   wa_counter Int      @default(0)
   wa_date    DateTime @unique
+}
+
+model Article {
+  id           Int      @id @default(autoincrement())
+  title        String   @db.VarChar(255)
+  slug         String   @unique(map: "slug") @db.VarChar(255)
+  summary      String?  @db.Text
+  content      String   @db.LongText
+  hero_image   String?  @db.VarChar(2048)
+  published_at DateTime @default(now()) @db.DateTime(0)
+
+  @@index([published_at], map: "idx_published")
 }

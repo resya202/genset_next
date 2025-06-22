@@ -11,7 +11,7 @@ export default function Header() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const t = headerTranslations[language];
   const redirectToWhatsApp = async () => {
-    const phoneNumber = ""; // Set your actual WhatsApp number here
+    const phoneNumber = "+6285877777271"; // Set your actual WhatsApp number here
     const message = "Halo, saya tertarik untuk mengetahui lebih lanjut mengenai layanan BPN Energi dan produk genset yang Anda tawarkan. Saya mendapatkan informasi ini melalui situs web Anda.";
     const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
   
@@ -28,7 +28,7 @@ export default function Header() {
       
   
       // Redirect to WhatsApp
-      // window.location.href = whatsappURL;
+      window.location.href = whatsappURL;
     } catch (error) {
       console.error('Failed to record WhatsApp click:', error);
     }
@@ -133,6 +133,15 @@ export default function Header() {
               className="hover:text-primaryOrange"
             >
               {t.services}
+            </Link>
+          </li>
+          <li>
+            <Link
+              onClick={() => setIsMenuOpen(false)}
+              href="/article"
+              className="hover:text-primaryOrange"
+            >
+              Articles
             </Link>
           </li>
           <li className="md:hidden relative">
