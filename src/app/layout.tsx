@@ -73,7 +73,7 @@ export default function RootLayout({
               className="fixed bottom-4 right-4 bg-green-500 p-4 rounded-full shadow-lg hover:bg-green-600 transition-all"
             >
               <img
-                src="whatsapp.png" // Replace with the actual path to your PNG file
+                src="whatsapp.png"
                 alt="WhatsApp"
                 className="w-6 h-6"
               />

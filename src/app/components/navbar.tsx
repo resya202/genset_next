@@ -135,6 +135,15 @@ export default function Header() {
               {t.services}
             </Link>
           </li>
+          <li>
+            <Link
+              onClick={() => setIsMenuOpen(false)}
+              href="/article"
+              className="hover:text-primaryOrange"
+            >
+              Articles
+            </Link>
+          </li>
           <li className="md:hidden relative">
             <button
               onClick={() => setDropdownOpen(!dropdownOpen)}
