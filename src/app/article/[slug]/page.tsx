@@ -6,19 +6,29 @@ import CoverImage from "@/app/components/coverImage";
 
 interface Props {
   params: { slug: string };
+  searchParams?: Record<string, string | string[]> | undefined;
 }
 
-export default async function ArticleDetail({ params }: Props) {
-  const article = await prisma.article.findUnique({
-    where: { slug: params.slug },
-    select: {
-      title: true,
-      summary: true,
-      content: true,
-      published_at: true,
-      hero_image: true,
-    },
-  });
+export default async function ArticleDetail({
+    params,
+  }: {
+    // params is now a Promise!
+    params: Promise<{ slug: string }>;
+  }) {
+    // wait for Next to hand over the real slug
+    const { slug } = await params;
+  
+    // fetch from the DB
+    const article = await prisma.article.findUnique({
+      where: { slug },
+      select: {
+        title: true,
+        summary: true,
+        content: true,
+        published_at: true,
+        hero_image: true,
+      },
+    });
 
   if (!article) return notFound();
 
