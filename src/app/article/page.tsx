@@ -1,4 +1,6 @@
 // src/app/article/page.tsx
+export const revalidate = 0
+export const dynamic = "force-dynamic"
 import Link from "next/link";
 import { prisma } from "../utils/prisma";
 import CoverImage from "@/app/components/coverImage";
